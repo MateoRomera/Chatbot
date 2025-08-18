@@ -1,10 +1,10 @@
 @echo off
 chcp 65001 >nul
-title NachoGPT - Asistente IA
+title SDF Assistant - Smart Document Finder
 
 echo.
 echo ========================================
-echo    🤖 NachoGPT - Asistente IA
+echo    🤖 SDF Assistant - Smart Document Finder
 echo ========================================
 echo.
 
@@ -30,24 +30,16 @@ if errorlevel 1 (
 
 echo ✅ Ollama está ejecutándose
 
-:: Verificar si el modelo está disponible (usando configuración)
-echo 🔍 Verificando modelo...
-python -c "from config import Config; print(f'Modelo configurado: {Config.OLLAMA_MODEL}')" 2>nul
+:: Verificar si el modelo gpt-oss:20b está disponible
+echo 🔍 Verificando modelo gpt-oss:20b...
+ollama list | findstr "gpt-oss:20b" >nul 2>&1
 if errorlevel 1 (
-    echo ⚠️ No se pudo leer la configuración, usando modelo por defecto
-    set MODEL_NAME=gpt-oss:20b
-) else (
-    for /f "tokens=*" %%i in ('python -c "from config import Config; print(Config.OLLAMA_MODEL)" 2^>nul') do set MODEL_NAME=%%i
-)
-
-ollama list | findstr "%MODEL_NAME%" >nul 2>&1
-if errorlevel 1 (
-    echo ⚠️ Modelo %MODEL_NAME% no encontrado
+    echo ⚠️ Modelo gpt-oss:20b no encontrado
     echo.
     set /p install_model="¿Deseas instalarlo ahora? (s/n): "
     if /i "%install_model%"=="s" (
-        echo 🔄 Instalando modelo %MODEL_NAME%...
-        ollama pull %MODEL_NAME%
+        echo 🔄 Instalando modelo gpt-oss:20b...
+        ollama pull gpt-oss:20b
         if errorlevel 1 (
             echo ❌ Error instalando el modelo
             pause
@@ -55,12 +47,12 @@ if errorlevel 1 (
         )
         echo ✅ Modelo instalado exitosamente
     ) else (
-        echo ❌ El modelo es necesario para ejecutar NachoGPT
+        echo ❌ El modelo es necesario para ejecutar SDF Assistant
         pause
         exit /b 1
     )
 ) else (
-    echo ✅ Modelo %MODEL_NAME% encontrado
+    echo ✅ Modelo gpt-oss:20b encontrado
 )
 
 :: Instalar dependencias si es necesario
@@ -86,12 +78,12 @@ if not exist "contexto" (
 )
 
 echo.
-echo ✅ Todo listo para ejecutar NachoGPT!
+echo ✅ Todo listo para ejecutar SDF Assistant!
 echo 🚀 Iniciando aplicación...
 echo.
 echo 📝 Instrucciones:
 echo   1. La aplicación se abrirá en tu navegador
-echo   2. Coloca tus documentos en la carpeta 'contexto'
+echo   2. Sube tus documentos en la barra lateral
 echo   3. Haz preguntas sobre tus documentos
 echo   4. Presiona Ctrl+C para cerrar
 echo.
@@ -99,8 +91,8 @@ echo ========================================
 echo.
 
 :: Ejecutar la aplicación
-python run_nachogpt.py
+python -m streamlit run app_sdf.py --server.port 8502 --server.address localhost
 
 echo.
-echo 👋 NachoGPT cerrado
+echo 👋 SDF Assistant cerrado
 pause
