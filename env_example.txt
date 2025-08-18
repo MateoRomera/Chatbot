@@ -1,0 +1,27 @@
+# Configuración de Ollama
+OLLAMA_BASE_URL=http://localhost:11434
+OLLAMA_MODEL=gpt-oss:20b
+
+# Configuración de documentos
+CONTEXT_FOLDER=contexto
+VECTOR_DB_PATH=vector_db
+
+# Configuración de rendimiento
+MAX_TOKENS=8192
+TEMPERATURE=0.7
+MAX_WORKERS=4
+CACHE_SIZE=100
+MAX_CONTEXT_LENGTH=8000
+CONTEXT_CHUNK_SIZE=2000
+
+# Configuración de Streamlit
+STREAMLIT_TITLE=🤖 SDF - Asistente IA Avanzado
+STREAMLIT_PAGE_TITLE=SDF Assistant
+STREAMLIT_PAGE_ICON=🤖
+STREAMLIT_LAYOUT=wide
+STREAMLIT_SIDEBAR_STATE=expanded
+STREAMLIT_PORT=8502
+STREAMLIT_HOST=localhost
+
+# Para acceso desde red local (cambiar a 0.0.0.0)
+# STREAMLIT_HOST=0.0.0.0

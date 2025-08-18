@@ -1,0 +1,4 @@
+# Esta carpeta es para los documentos que quieres analizar con SDF Assistant
+# Coloca aquí tus archivos Excel, PDF, CSV, Word, etc.
+# Los archivos en esta carpeta serán procesados automáticamente por el asistente
+# SDF Assistant buscará automáticamente los documentos más relevantes para cada pregunta
