@@ -10,147 +10,212 @@ logger = logging.getLogger(__name__)
 
 # Configuración de la página
 st.set_page_config(
-    page_title="SDF Assistant",
-    page_icon="🤖",
+    page_title="IA del Personal Militar Argentino",
+    page_icon="🎖️",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="collapsed"
 )
 
-# CSS moderno y atractivo
+# CSS mejorado con tema oscuro y colores azul marino
 st.markdown("""
 <style>
+    /* Variables de color */
+    :root {
+        --navy-blue: #1e3a8a;
+        --light-navy: #3b82f6;
+        --white: #ffffff;
+        --dark-bg: #0f172a;
+        --darker-bg: #020617;
+        --border-color: #334155;
+        --text-color: #e2e8f0;
+    }
+    
+    /* Estilos generales */
     .main {
-        padding: 2rem;
+        padding: 0;
+        max-width: 100%;
+        background: var(--dark-bg);
+        color: var(--text-color);
+    }
+    
+    /* Ocultar elementos innecesarios */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    
+    /* Fondo general */
+    .stApp {
+        background: var(--dark-bg);
+    }
+    
+    /* Título principal */
+    .main-title {
+        background: linear-gradient(135deg, var(--navy-blue) 0%, var(--light-navy) 100%);
+        color: var(--white);
+        padding: 2rem 1rem;
+        margin: -1rem -1rem 2rem -1rem;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        border-radius: 0 0 15px 15px;
+    }
+    
+    .main-title h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Contenedores principales */
+    .main-container {
         max-width: 1200px;
         margin: 0 auto;
+        padding: 0 1rem;
+        background: var(--dark-bg);
     }
     
-    .header {
-        text-align: center;
-        margin-bottom: 3rem;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        padding: 2rem;
-        border-radius: 15px;
-        color: white;
-    }
-    
-    .header h1 {
-        font-size: 3rem;
-        margin-bottom: 0.5rem;
-        font-weight: 700;
-    }
-    
-    .header p {
-        font-size: 1.2rem;
-        opacity: 0.9;
-    }
-    
-    .chat-container {
-        background: white;
-        border-radius: 15px;
-        padding: 2rem;
-        box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    /* Secciones - sin bordes ni fondo */
+    .section {
         margin-bottom: 2rem;
-        min-height: 500px;
-        max-height: 700px;
-        overflow-y: auto;
-        border: 1px solid #e0e0e0;
-    }
-    
-    .message {
-        margin-bottom: 1.5rem;
         padding: 1.5rem;
-        border-radius: 12px;
-        position: relative;
-    }
-    
-    .user-message {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
-        margin-left: 3rem;
-        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-    }
-    
-    .assistant-message {
-        background: #f8f9fa;
-        color: #2c3e50;
-        margin-right: 3rem;
-        border: 1px solid #e9ecef;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    }
-    
-    .input-container {
-        background: white;
-        border-radius: 15px;
-        padding: 2rem;
-        box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-        border: 1px solid #e0e0e0;
-    }
-    
-    .stTextArea > div > div > textarea {
-        border: 2px solid #e9ecef;
-        border-radius: 12px;
-        padding: 1.5rem;
-        font-size: 16px;
-        transition: all 0.3s ease;
-    }
-    
-    .stTextArea > div > div > textarea:focus {
-        border-color: #667eea;
-        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-    }
-    
-    .stButton > button {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
         border: none;
-        border-radius: 12px;
-        padding: 1rem 2rem;
-        font-size: 16px;
-        font-weight: 600;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
         transition: all 0.3s ease;
-        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    }
+    
+    .section:hover {
+        box-shadow: none;
+        border: none;
+    }
+    
+    .section-title {
+        font-weight: 700;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        color: var(--white);
+        border-bottom: 3px solid var(--navy-blue);
+        padding-bottom: 0.5rem;
+    }
+    
+    /* Área de respuesta - sin bordes */
+    .response-area {
+        min-height: 200px;
+        background: var(--darker-bg);
+        padding: 1.5rem;
+        border: none;
+        border-radius: 0;
+        color: var(--text-color);
+        font-size: 15px;
+        line-height: 1.6;
+        white-space: normal;
+        word-wrap: break-word;
+        box-shadow: none;
+        text-align: justify;
+    }
+    
+    /* Botones */
+    .stButton > button {
+        background: linear-gradient(135deg, var(--navy-blue) 0%, var(--light-navy) 100%);
+        color: var(--white);
+        border: none;
+        border-radius: 8px;
+        padding: 0.75rem 1.5rem;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
     
     .stButton > button:hover {
         transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        background: linear-gradient(135deg, var(--light-navy) 0%, var(--navy-blue) 100%);
     }
     
-    .stats {
-        text-align: center;
-        color: #6c757d;
-        font-size: 0.9rem;
-        margin-top: 1rem;
+    /* Textarea - sin bordes */
+    .stTextArea textarea {
+        background: var(--darker-bg);
+        border: none;
+        border-radius: 0;
         padding: 1rem;
-        background: #f8f9fa;
-        border-radius: 10px;
-    }
-    
-    .stApp {
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    }
-    
-    .sidebar {
-        background: white;
-        border-radius: 15px;
-        padding: 1.5rem;
-        box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-        margin-bottom: 2rem;
-    }
-    
-    .file-upload {
-        border: 2px dashed #667eea;
-        border-radius: 12px;
-        padding: 2rem;
-        text-align: center;
-        background: #f8f9ff;
+        font-size: 15px;
+        color: var(--text-color);
         transition: all 0.3s ease;
     }
     
-    .file-upload:hover {
-        border-color: #764ba2;
-        background: #f0f2ff;
+    .stTextArea textarea:focus {
+        border: none;
+        box-shadow: none;
+        background: var(--darker-bg);
+    }
+    
+    /* Selectbox - sin bordes */
+    .stSelectbox select {
+        background: var(--darker-bg);
+        border: none;
+        border-radius: 0;
+        padding: 0.5rem;
+        font-size: 14px;
+        color: var(--text-color);
+        transition: all 0.3s ease;
+    }
+    
+    .stSelectbox select:focus {
+        border: none;
+        box-shadow: none;
+        background: var(--darker-bg);
+    }
+    
+    /* Sidebar */
+    .css-1d391kg {
+        background: var(--darker-bg);
+        border-right: none;
+    }
+    
+    .sidebar .sidebar-content {
+        background: var(--darker-bg);
+        color: var(--text-color);
+    }
+    
+    /* Mensajes del sistema */
+    .stAlert {
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        background: var(--darker-bg);
+        color: var(--text-color);
+    }
+    
+    /* Spinner */
+    .stSpinner > div {
+        border-color: var(--navy-blue);
+    }
+    
+    /* Eliminar barras blancas de Streamlit */
+    .block-container {
+        background: var(--dark-bg);
+        padding: 0;
+    }
+    
+    .stApp > header {
+        background: var(--dark-bg);
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+        .main-title h1 {
+            font-size: 2rem;
+        }
+        
+        .section {
+            padding: 1rem;
+        }
+        
+        .main-container {
+            padding: 0 0.5rem;
+        }
     }
 </style>
 """, unsafe_allow_html=True)
@@ -161,176 +226,125 @@ if "messages" not in st.session_state:
 if "assistant" not in st.session_state:
     st.session_state.assistant = SDFAssistant()
 
-# Header atractivo
-st.markdown("""
-<div class="header">
-    <h1>🤖 SDF Assistant</h1>
-    <p>Smart Document Finder - Asistente IA para análisis inteligente de documentos</p>
-</div>
-""", unsafe_allow_html=True)
-
-# Sidebar para configuración y carga de archivos
-with st.sidebar:
-    st.markdown('<div class="sidebar">', unsafe_allow_html=True)
-    
-    st.subheader("📁 Cargar Documentos")
-    
-    uploaded_files = st.file_uploader(
-        "Sube tus documentos (Excel, PDF, CSV)",
-        type=['xlsx', 'xls', 'pdf', 'csv', 'txt', 'docx'],
-        accept_multiple_files=True,
-        help="Puedes subir múltiples archivos a la vez"
-    )
-    
-    if uploaded_files:
-        for uploaded_file in uploaded_files:
-            # Guardar archivo en la carpeta contexto
-            import os
-            file_path = os.path.join(Config.CONTEXT_FOLDER, uploaded_file.name)
-            with open(file_path, "wb") as f:
-                f.write(uploaded_file.getbuffer())
-            st.success(f"✅ {uploaded_file.name} cargado")
-        
-        # Recargar documentos después de subir
-        if st.button("🔄 Recargar Documentos"):
-            with st.spinner("Recargando documentos..."):
-                st.session_state.assistant.reload_documents()
-                st.success("Documentos recargados exitosamente")
-    
-    st.markdown("---")
-    
-    # Información del sistema
-    st.subheader("⚙️ Información del Sistema")
-    st.info(f"Modelo: {Config.OLLAMA_MODEL}")
-    st.info(f"Documentos cargados: {len(st.session_state.assistant.documents_cache)}")
-    
-    # Botón para limpiar conversación
-    if st.button("🗑️ Limpiar Conversación"):
-        st.session_state.messages = []
-        st.rerun()
-    
-    st.markdown('</div>', unsafe_allow_html=True)
+# Título principal mejorado
+st.markdown('<div class="main-title"><h1>🎖️ IA del Personal Militar Argentino</h1></div>',
+            unsafe_allow_html=True)
 
 # Contenedor principal
-col1, col2 = st.columns([2, 1])
+st.markdown('<div class="main-container">', unsafe_allow_html=True)
 
+# Sección 1: Input
+st.markdown('<div class="section">', unsafe_allow_html=True)
+st.markdown('<div class="section-title">📝 Escribe tu consulta</div>',
+            unsafe_allow_html=True)
+
+col1, col2 = st.columns([4, 1])
 with col1:
-    # Contenedor de chat
-    st.markdown('<div class="chat-container">', unsafe_allow_html=True)
-    
-    if not st.session_state.messages:
-        st.markdown("""
-        <div style="text-align: center; color: #6c757d; margin-top: 3rem;">
-            <h3>💬 ¡Bienvenido a SDF Assistant!</h3>
-            <p>Sube tus documentos en la barra lateral y haz preguntas sobre ellos.</p>
-            <p><strong>Ejemplos:</strong></p>
-            <ul style="text-align: left; display: inline-block;">
-                <li>"¿Qué datos contiene el archivo Excel?"</li>
-                <li>"Analiza las tendencias en el CSV"</li>
-                <li>"¿Qué información hay en el PDF?"</li>
-            </ul>
-        </div>
-        """, unsafe_allow_html=True)
-    else:
-        for message in st.session_state.messages:
-            if message["role"] == "user":
-                st.markdown(f'<div class="message user-message"><strong>👤 Tú:</strong> {message["content"]}</div>', unsafe_allow_html=True)
-            else:
-                st.markdown(f'<div class="message assistant-message"><strong>🤖 SDF:</strong> {message["content"]}</div>', unsafe_allow_html=True)
-    
-    st.markdown('</div>', unsafe_allow_html=True)
-
-    # Input para preguntas
-    st.markdown('<div class="input-container">', unsafe_allow_html=True)
-    
-    user_input = st.text_area(
-        "Escribe tu pregunta sobre los documentos...",
-        key="chat_input",
-        height=120,
-        placeholder="Ejemplo: ¿Qué datos contiene el archivo Excel? ¿Cuáles son las tendencias en el CSV? ¿Qué información hay en el PDF?"
-    )
-    
-    col1, col2, col3 = st.columns([1, 1, 1])
-    
-    with col1:
-        if st.button("🚀 Enviar", use_container_width=True):
-            if user_input.strip():
-                st.session_state.messages.append({"role": "user", "content": user_input})
-                
-                with st.spinner("🔍 SDF analizando documentos..."):
-                    result = st.session_state.assistant.chat(user_input)
-                    
-                    if result["success"]:
-                        st.session_state.messages.append({
-                            "role": "assistant", 
-                            "content": result["response"]
-                        })
-                    else:
-                        st.session_state.messages.append({
-                            "role": "assistant", 
-                            "content": f"❌ Error: {result['response']}"
-                        })
-                
-                st.rerun()
-    
-    with col2:
-        if st.button("🔄 Recargar", use_container_width=True):
-            with st.spinner("Recargando SDF..."):
-                st.session_state.assistant = SDFAssistant()
-                st.rerun()
-    
-    with col3:
-        if st.button("📊 Documentos", use_container_width=True):
-            overview = st.session_state.assistant.get_document_overview()
-            if overview["success"]:
-                st.info(f"📁 {overview['total_documents']} documentos cargados")
-    
-    st.markdown('</div>', unsafe_allow_html=True)
-
+    user_input = st.text_area("Consulta", key="chat_input",
+                              height=80, placeholder="Escribe aquí tu consulta...", label_visibility="collapsed")
 with col2:
-    # Panel de información
-    st.subheader("📊 Estadísticas")
-    
-    # Información de documentos
-    overview = st.session_state.assistant.get_document_overview()
-    if overview["success"]:
-        st.metric("Documentos", overview["total_documents"])
-        
-        # Tipos de archivo
-        file_types = {}
-        for doc in overview["documents"]:
-            file_type = doc["file_type"]
-            if file_type not in file_types:
-                file_types[file_type] = 0
-            file_types[file_type] += 1
-        
-        st.subheader("📁 Tipos de Archivo")
-        for file_type, count in file_types.items():
-            st.metric(file_type.upper(), count)
-    
-    # Información de la conversación
-    st.subheader("💬 Conversación")
-    st.metric("Mensajes", len(st.session_state.messages))
-    
-    if st.session_state.messages:
-        last_message = st.session_state.messages[-1]
-        if last_message["role"] == "assistant":
-            st.info("✅ Última respuesta generada")
-        else:
-            st.info("⏳ Esperando respuesta...")
+    if st.button("🚀 Enviar"):
+        if user_input.strip():
+            st.session_state.messages.append(
+                {"role": "user", "content": user_input})
 
-# Estadísticas en el pie de página
-if st.session_state.messages:
-    last_result = None
+            with st.spinner("🔄 Procesando..."):
+                result = st.session_state.assistant.chat(user_input)
+
+                if result["success"]:
+                    st.session_state.messages.append({
+                        "role": "assistant",
+                        "content": result["response"]
+                    })
+                else:
+                    st.session_state.messages.append({
+                        "role": "assistant",
+                        "content": f"❌ Error: {result['response']}"
+                    })
+
+            st.rerun()
+
+st.markdown('</div>', unsafe_allow_html=True)
+
+# Sección 2: Respuesta
+st.markdown('<div class="section">', unsafe_allow_html=True)
+st.markdown('<div class="section-title">💬 Respuesta</div>',
+            unsafe_allow_html=True)
+
+if not st.session_state.messages:
+    st.markdown('<div class="response-area">📋 La respuesta aparecerá aquí...</div>',
+                unsafe_allow_html=True)
+else:
+    # Mostrar solo la última respuesta del asistente
+    last_assistant_message = None
     for message in reversed(st.session_state.messages):
         if message["role"] == "assistant":
-            # Buscar el resultado más reciente
+            last_assistant_message = message["content"]
             break
-    
-    st.markdown(f"""
-    <div class="stats">
-        📊 Documentos: {len(st.session_state.assistant.documents_cache)} | 
-        💬 Mensajes: {len(st.session_state.messages)} | 
-        🤖 Modelo: {Config.OLLAMA_MODEL}
+
+    if last_assistant_message:
+        st.markdown(
+            f'<div class="response-area">{last_assistant_message}</div>', unsafe_allow_html=True)
+    else:
+        st.markdown('<div class="response-area">🔄 Procesando...</div>',
+                    unsafe_allow_html=True)
+
+st.markdown('</div>', unsafe_allow_html=True)
+
+# Sección 3: Query
+st.markdown('<div class="section">', unsafe_allow_html=True)
+st.markdown('<div class="section-title">🔍 Búsqueda estructurada</div>',
+            unsafe_allow_html=True)
+
+col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
+
+with col1:
+    fuerza = st.selectbox(
+        "Fuerza", ["-- Fuerza --", "Ejército", "Armada", "Fuerza Aérea"])
+
+with col2:
+    provincia = st.selectbox("Provincia", [
+                             "-- Provincia --", "Buenos Aires", "Córdoba", "Santa Fe", "Mendoza", "Tucumán"])
+
+with col3:
+    especialidad = st.selectbox("Especialidad", [
+                                "-- Especialidad --", "Infantería", "Artillería", "Caballería", "Ingenieros", "Comunicaciones"])
+
+with col4:
+    if st.button("🔎 Buscar"):
+        st.info("🔍 Búsqueda implementada")
+
+st.markdown('</div>', unsafe_allow_html=True)
+
+st.markdown('</div>', unsafe_allow_html=True)  # Cerrar main-container
+
+# Sidebar mejorado
+with st.sidebar:
+    st.markdown("""
+    <div style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); 
+                color: white; 
+                padding: 1rem; 
+                border-radius: 8px; 
+                margin-bottom: 1rem;">
+        <h3 style="margin: 0; text-align: center;">⚙️ Sistema</h3>
     </div>
     """, unsafe_allow_html=True)
+
+    st.write(f"🤖 **Modelo:** {Config.OLLAMA_MODEL}")
+
+    overview = st.session_state.assistant.get_document_overview()
+    if overview["success"]:
+        st.write(f"📚 **Documentos:** {overview['total_documents']}")
+
+    st.markdown("---")
+
+    col1, col2 = st.columns(2)
+    with col1:
+        if st.button("🧹 Limpiar"):
+            st.session_state.messages = []
+            st.rerun()
+
+    with col2:
+        if st.button("🔄 Recargar"):
+            st.session_state.assistant.reload_documents()
+            st.rerun()

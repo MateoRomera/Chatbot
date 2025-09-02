@@ -1,0 +1,210 @@
+import os, re, json, sqlite3, duckdb, yaml, xmltodict, pandas as pd
+from pathlib import Path
+from fastapi import FastAPI, Body
+from fastapi.middleware.cors import CORSMiddleware
+from typing import Any, Dict, List
+from unidecode import unidecode
+
+DATA_DIR = Path(os.environ.get("DEFENSA_DATA_DIR", Path(__file__).parent / "data")).resolve()
+
+def norm(s:str)->str:
+    return unidecode(str(s or "").lower().strip())
+
+def read_one(p: Path) -> pd.DataFrame:
+    s=p.suffix.lower()
+    if s=='.csv':
+        return pd.read_csv(p, dtype=str)
+    if s=='.json':
+        obj=json.loads(p.read_text(encoding='utf-8'))
+        if isinstance(obj, dict) and '_default' in obj:
+            obj=[v for _,v in sorted(obj['_default'].items(), key=lambda kv:int(kv[0]))]
+        return pd.DataFrame(obj, dtype=str)
+    if s in ('.xlsx','.xls'):
+        return pd.read_excel(p, dtype=str)
+    if s in ('.sqlite','.db'):
+        con=sqlite3.connect(str(p))
+        df=pd.read_sql('select * from personal', con, dtype=str)
+        con.close(); return df
+    if s=='.duckdb':
+        con=duckdb.connect(str(p))
+        tabs=[t[0] for t in con.execute("show tables").fetchall()]
+        if 'personal' not in tabs and tabs:
+            con.execute(f'create or replace table personal as select * from "{tabs[0]}"')
+        df=con.execute("select * from personal").df()
+        con.close(); return df.astype(str)
+    if s in ('.yaml','.yml'):
+        data=yaml.safe_load(p.read_text(encoding='utf-8')) or []
+        return pd.DataFrame(data, dtype=str)
+    if s=='.xml':
+        obj=xmltodict.parse(p.read_text(encoding='utf-8'))
+        def first_list(x):
+            if isinstance(x,list): return x
+            if isinstance(x,dict):
+                for v in x.values():
+                    y=first_list(v)
+                    if y is not None: return y
+        lst=first_list(obj) or []
+        return pd.DataFrame(lst, dtype=str)
+    return pd.DataFrame()
+
+def fix_columns(df: pd.DataFrame) -> pd.DataFrame:
+    df=df.copy()
+    rename={
+        'Correo':'Correo electrónico','Email':'Correo electrónico','E-mail':'Correo electrónico',
+        'Grado':'Grado o Rango','Nivel de estudios':'Formación universitaria',
+        'Region':'Región','Provincia ':'Provincia'
+    }
+    df.rename(columns={k:v for k,v in rename.items() if k in df.columns}, inplace=True)
+    for col in ['Nombre completo','DNI','Fuerza','Región','Provincia',
+                'Especialidad','Formación universitaria','Grado o Rango','Destacamento',
+                'Jefe inmediato','Teléfono','Correo electrónico','Fecha de nacimiento']:
+        if col not in df.columns:
+            df[col]=""
+    # normalizar DNI
+    df['DNI']=df['DNI'].astype(str).str.replace(r'\D','',regex=True)
+    # completar nombre desde correo si faltara
+    mask = df['Nombre completo'].astype(str).str.strip().eq("")
+    if mask.any():
+        tmp = df.loc[mask, 'Correo electrónico'].fillna("").astype(str)\
+              .str.extract(r"^([^@]+)@", expand=False).fillna("")\
+              .str.replace(r"[\._\-]+"," ", regex=True).str.title()
+        df.loc[mask, 'Nombre completo']=tmp
+    # fuerzas válidas
+    def norm_force(x):
+        s=norm(x)
+        if 'ejerc' in s: return 'Ejército'
+        if 'aer' in s or 'faa' in s: return 'Fuerza Aérea'
+        if 'armad' in s or 'marin' in s or 'ara' in s: return 'Armada'
+        return x
+    df['Fuerza']=df['Fuerza'].map(norm_force)
+    # quitar Prefectura/Gendarmería si aparecieran por error (v3 = MD - 3 fuerzas)
+    df=df[df['Fuerza'].isin(['Ejército','Fuerza Aérea','Armada'])]
+    return df
+
+def load_datalake() -> pd.DataFrame:
+    frames=[]
+    for p in sorted(DATA_DIR.glob('personal_*')):
+        try:
+            df=fix_columns(read_one(p))
+            df['__origen__']=str(p)
+            frames.append(df)
+        except Exception as e:
+            print(f"Error al cargar {p.name}: {e}")
+    if not frames:
+        return pd.DataFrame()
+    df=pd.concat(frames, ignore_index=True, sort=False)
+    # robustez: asegurar únicos por DNI (por si el usuario aún no corrió el fix)
+    df = df.drop_duplicates(subset=['DNI'], keep='first')
+    # columnas finales (sin __origen__)
+    cols=["ID","Nombre completo","DNI","Fuerza","Región","Provincia",
+          "Especialidad","Formación universitaria","Grado o Rango",
+          "Destacamento","Jefe inmediato","Teléfono","Correo electrónico","Fecha de nacimiento"]
+    keep=[c for c in cols if c in df.columns]
+    return df[keep].fillna("")
+
+DF = load_datalake()
+
+# ---------- FastAPI ----------
+app = FastAPI(title="Defensa RAG v3", version="3.0")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], allow_methods=["*"], allow_headers=["*"], allow_credentials=True
+)
+
+@app.get("/api/health")
+def health():
+    return {"status":"ok","rows": int(len(DF))}
+
+def options_for(col:str):
+    if col not in DF.columns: return []
+    g=DF.groupby(col).size().sort_values(ascending=False).reset_index(name="Filas")
+    return g.to_dict(orient="records")
+
+@app.get("/api/meta/options")
+def meta_options():
+    cols=["Región","Fuerza","Formación universitaria","Provincia","Especialidad","Jefe inmediato","Nombre completo"]
+    return {"options": {c: options_for(c) for c in cols}}
+
+def apply_filters(df: pd.DataFrame, filters: Dict[str,Any]) -> pd.DataFrame:
+    out=df.copy()
+    for k,v in (filters or {}).items():
+        if not v: continue
+        if k.endswith("__contains"):
+            col=k.split("__")[0]
+            out = out[out[col].astype(str).apply(lambda x: norm(v) in norm(x))]
+        else:
+            if isinstance(v, list):
+                out = out[out[k].isin(v)]
+            else:
+                out = out[out[k].astype(str)==str(v)]
+    return out
+
+REGION_SYNONYMS = {'nea':'NEA','noa':'NOA','patagon':'Patagonia','cuyo':'Cuyo','centro':'Centro'}
+FORCE_ALIASES = {'ejercito':'Ejército','ejército':'Ejército','ea':'Ejército',
+                 'armada':'Armada','marina':'Armada','ara':'Armada',
+                 'fuerza aerea':'Fuerza Aérea','aerea':'Fuerza Aérea','aérea':'Fuerza Aérea','faa':'Fuerza Aérea'}
+
+def parse_free(query:str) -> Dict[str,Any]:
+    t=norm(query)
+    filters: Dict[str,Any]={}
+    # DNI
+    m=re.search(r'\b(\d{7,9})\b', t)
+    if m: 
+        filters['DNI']=m.group(1); return filters
+    # región
+    for k,canon in REGION_SYNONYMS.items():
+        if k in t: filters['Región']=canon; break
+    # fuerza
+    for k,canon in FORCE_ALIASES.items():
+        if k in t: filters['Fuerza']=canon; break
+    # provincia
+    for p in DF['Provincia'].dropna().unique():
+        if norm(p) in t: filters['Provincia']=p; break
+    # especialidad
+    for e in DF['Especialidad'].dropna().unique():
+        if norm(e) in t: filters['Especialidad']=e; break
+    # formación (nivel de estudios)
+    for f in DF['Formación universitaria'].dropna().unique():
+        if norm(f) in t: filters['Formación universitaria']=f; break
+    # nombre (token contiene)
+    if 'Nombre completo__contains' not in filters:
+        names = [unidecode(str(n).lower()) for n in DF['Nombre completo'].dropna().unique()]
+        for w in re.findall(r'[a-záéíóúñ]+', t):
+            if any(w in n for n in names):
+                filters['Nombre completo__contains']=w
+                break
+    return filters
+
+def format_output(df: pd.DataFrame) -> List[Dict[str,Any]]:
+    cols=["ID","Nombre completo","DNI","Fuerza","Región","Provincia",
+          "Especialidad","Formación universitaria","Grado o Rango",
+          "Destacamento","Jefe inmediato","Teléfono","Correo electrónico","Fecha de nacimiento"]
+    keep=[c for c in cols if c in df.columns]
+    return df[keep].head(200).to_dict(orient="records")
+
+@app.post("/api/query/assisted")
+def query_assisted(filters: Dict[str,Any]=Body(default={})):
+    out = apply_filters(DF, filters)
+    return {"count": int(len(out)), "results": format_output(out)}
+
+@app.post("/api/query/free")
+def query_free(payload: Dict[str,Any]=Body(default={})):
+    text = payload.get("text","")
+    filters = parse_free(text)
+    out = apply_filters(DF, filters) if filters else DF
+    return {"filters": filters, "count": int(len(out)), "results": format_output(out)}
+
+# ====================================================
+# Endpoint de integridad de datos
+# ====================================================
+from fastapi import APIRouter
+from common import verify_checksums
+
+router = APIRouter()
+
+@router.get("/api/integrity")
+def integrity_check():
+    ok = verify_checksums()
+    return {"integrity": "ok" if ok else "failed"}
+    
+app.include_router(router)

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA del Personal Militar Argentino</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+
+    header {
+      background: #004466;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 1rem auto;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #004466;
+    }
+
+    #chatBox {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1rem;
+      height: 250px;
+      overflow-y: auto;
+      background: #fafafa;
+      margin-bottom: 1rem;
+    }
+
+    #chatInput {
+      width: 75%;
+      padding: 0.5rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-right: 0.5rem;
+    }
+
+    button {
+      background: #004466;
+      color: #fff;
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background: #006699;
+    }
+
+    select {
+      padding: 0.5rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-right: 0.5rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 0.8rem;
+      text-align: left;
+    }
+
+    th {
+      background: #004466;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    @media (max-width: 600px) {
+      #chatInput {
+        width: 100%;
+        margin-bottom: 0.5rem;
+      }
+
+      button {
+        width: 100%;
+        margin-top: 0.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>IA del Personal Militar Argentino</header>
+  <main>
+    <!-- Chat IA -->
+    <section class="card">
+      <h2>Chat IA</h2>
+      <div id="chatBox"></div>
+      <input type="text" id="chatInput" placeholder="Escribe tu consulta...">
+      <button onclick="sendChat()">Enviar</button>
+    </section>
+
+    <!-- Administración de datos -->
+    <section class="card">
+      <h2>Administración de Datos</h2>
+      <div>
+        <button onclick="reloadData()" id="reloadBtn">🔄 Recargar Datos</button>
+        <button onclick="getDataFiles()" id="filesBtn">📁 Ver Archivos</button>
+      </div>
+      <div id="adminBox"></div>
+    </section>
+
+    <!-- Query estructurada -->
+    <section class="card">
+      <h2>Query estructurada</h2>
+      <div>
+        <select id="fuerza">
+          <option value="">-- Fuerza --</option>
+          <option>Ejército</option>
+          <option>Armada</option>
+          <option>Fuerza Aérea</option>
+        </select>
+        <select id="provincia">
+          <option value="">-- Provincia --</option>
+          <option>Mendoza</option>
+          <option>Buenos Aires</option>
+          <option>Córdoba</option>
+        </select>
+        <select id="especialidad">
+          <option value="">-- Especialidad --</option>
+          <option>Ingeniero</option>
+          <option>Médico</option>
+          <option>Infantería</option>
+        </select>
+        <button onclick="sendStructured()">Buscar</button>
+      </div>
+      <div id="resultsBox"></div>
+    </section>
+  </main>
+
+  <script>
+    const BACKEND_URL = "http://127.0.0.1:8000/api";
+
+    async function sendChat() {
+      const input = document.getElementById("chatInput").value;
+      const chatBox = document.getElementById("chatBox");
+      if (!input) return;
+
+      chatBox.innerHTML += `<p><strong>Usuario:</strong> ${input}</p>`;
+      try {
+        const resp = await fetch(`${BACKEND_URL}/ask?query=${encodeURIComponent(input)}`);
+        const data = await resp.json();
+        const answer = data.data?.response || "⚠️ Sin respuesta";
+        chatBox.innerHTML += `<p><strong>IA:</strong> ${answer}</p>`;
+        chatBox.scrollTop = chatBox.scrollHeight;
+      } catch (err) {
+        chatBox.innerHTML += `<p style="color:red"><strong>Error:</strong> No se pudo conectar al backend.</p>`;
+      }
+    }
+
+    async function sendStructured() {
+      const fuerza = document.getElementById("fuerza").value;
+      const provincia = document.getElementById("provincia").value;
+      const especialidad = document.getElementById("especialidad").value;
+
+      const resultsBox = document.getElementById("resultsBox");
+      resultsBox.innerHTML = "<em>Buscando...</em>";
+
+      try {
+        const params = new URLSearchParams({ fuerza, provincia, especialidad });
+        const resp = await fetch(`${BACKEND_URL}/structured_query?${params}`);
+        const data = await resp.json();
+
+        if (!data.success) throw new Error(data.error);
+
+        // Crear tabla
+        let html = "<table><tr><th>ID</th><th>Nombre</th><th>Fuerza</th><th>Provincia</th><th>Especialidad</th></tr>";
+        data.data.results.forEach(r => {
+          html += `<tr>
+                    <td>${r.id}</td>
+                    <td>${r.nombre_completo}</td>
+                    <td>${r.fuerza}</td>
+                    <td>${r.provincia}</td>
+                    <td>${r.especialidad}</td>
+                  </tr>`;
+        });
+        html += "</table>";
+        resultsBox.innerHTML = html;
+      } catch (err) {
+        resultsBox.innerHTML = `<p style="color:red"><strong>Error:</strong> ${err.message}</p>`;
+      }
+    }
+
+    async function reloadData() {
+      const adminBox = document.getElementById("adminBox");
+      const reloadBtn = document.getElementById("reloadBtn");
+
+      reloadBtn.disabled = true;
+      reloadBtn.textContent = "🔄 Recargando...";
+      adminBox.innerHTML = "<em>Recargando datos...</em>";
+
+      try {
+        const resp = await fetch(`${BACKEND_URL}/reload_data`, { method: 'POST' });
+        const data = await resp.json();
+
+        if (!data.success) throw new Error(data.error);
+
+        adminBox.innerHTML = `
+          <div style="color: green; margin: 1rem 0;">
+            <strong>✅ Recarga exitosa:</strong> ${data.data.message}
+          </div>
+          <div style="margin: 1rem 0;">
+            <strong>Archivos detectados:</strong>
+            <ul>
+              ${data.data.files.map(file => `<li>${file}</li>`).join('')}
+            </ul>
+          </div>
+        `;
+      } catch (err) {
+        adminBox.innerHTML = `<p style="color:red"><strong>Error:</strong> ${err.message}</p>`;
+      } finally {
+        reloadBtn.disabled = false;
+        reloadBtn.textContent = "🔄 Recargar Datos";
+      }
+    }
+
+    async function getDataFiles() {
+      const adminBox = document.getElementById("adminBox");
+      const filesBtn = document.getElementById("filesBtn");
+
+      filesBtn.disabled = true;
+      filesBtn.textContent = "📁 Cargando...";
+      adminBox.innerHTML = "<em>Obteniendo archivos...</em>";
+
+      try {
+        const resp = await fetch(`${BACKEND_URL}/data_files`);
+        const data = await resp.json();
+
+        if (!data.success) throw new Error(data.error);
+
+        let html = `
+          <div style="margin: 1rem 0;">
+            <strong>Archivos cargados (${data.data.count}):</strong>
+            <table style="margin-top: 0.5rem;">
+              <tr><th>Nombre</th><th>Tipo</th><th>Tamaño</th></tr>
+        `;
+
+        data.data.files.forEach(file => {
+          const sizeKB = Math.round(file.size / 1024);
+          html += `<tr>
+                    <td>${file.name}</td>
+                    <td>${file.type}</td>
+                    <td>${sizeKB} KB</td>
+                  </tr>`;
+        });
+
+        html += "</table></div>";
+        adminBox.innerHTML = html;
+      } catch (err) {
+        adminBox.innerHTML = `<p style="color:red"><strong>Error:</strong> ${err.message}</p>`;
+      } finally {
+        filesBtn.disabled = false;
+        filesBtn.textContent = "📁 Ver Archivos";
+      }
+    }
+  </script>
+</body>
+
+</html>

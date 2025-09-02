@@ -1,0 +1,301 @@
+ID,Nombre completo,DNI,Fecha de nacimiento,Fuerza,Grado o Rango,Región,Provincia,Destacamento,Formación universitaria,Capacitación,Especialidad,Jefe inmediato,Teléfono,Correo electrónico
+901,Carolina Vázquez,30918525,1964-10-05,Armada,Guardiamarina,Centro,Córdoba,Comando Córdoba 6,Medicina,Militar,Ingeniero,Pablo Rojas,+54 9 2674 34079-4101,carolina.vazquez@defensa.ar
+902,Ezequiel Orozco,39987438,1963-10-28,Ejército,Coronel,Centro,Buenos Aires,Comando La Plata 8,Relaciones Internacionales,Curso Intermedio,Inteligencia,Renata Romero,+54 9 851 81588-3068,ezequiel.orozco@defensa.ar
+903,Facundo Romero,51079342,2005-05-30,Fuerza Aérea,Capitán,NOA,Catamarca,Comando San Fernando del Valle 6,Relaciones Internacionales,Civil,Logística,Valentina Herrera,+54 9 1734 29842-4671,facundo.romero@defensa.ar
+904,Nicolás Silva,26335363,1974-06-21,Armada,Capitán de Corbeta,NOA,Tucumán,Brigada San Miguel de Tucumán 8,Relaciones Internacionales,Militar,Infantería,Juan Gómez,+54 9 103 57902-4836,nicolas.silva@defensa.ar
+905,Ramiro Gutiérrez,32422790,1977-10-10,Fuerza Aérea,Teniente,Centro,Santa Fe,Escuadrón Santa Fe 8,Ingeniería,Curso Básico,Caballería,Camila Molina,+54 9 1655 40461-6990,ramiro.gutierrez@defensa.ar
+906,Nicolás González,39008791,1962-07-28,Armada,Sargento,Cuyo,Mendoza,Brigada Mendoza 1,Administración,Curso Intermedio,Inteligencia,Ramiro Sosa,+54 9 788 36751-6814,nicolas.gonzalez@defensa.ar
+907,María Ramírez,21345786,2001-08-30,Armada,Capitán de Fragata,NOA,La Rioja,Base Naval La Rioja 6,Informática,Curso Intermedio,Artillería,Paula Vázquez,+54 9 1288 28523-5236,maria.ramirez@defensa.ar
+908,Ailén Benítez,26075793,1962-09-04,Fuerza Aérea,Capitán,NOA,Catamarca,Base Aérea San Fernando del Valle 2,Derecho,Curso Básico,Logística,Juan Pérez,+54 9 2882 31133-2453,ailen.benitez@defensa.ar
+909,Francisco Sosa,34000241,1982-09-09,Fuerza Aérea,Alférez,Centro,Córdoba,Escuadrón Córdoba 2,Historia,Curso Básico,Logística,Iván Díaz,+54 9 2458 54860-9314,francisco.sosa@defensa.ar
+910,María Domínguez,24817465,1960-08-13,Armada,Capitán de Fragata,NOA,Santiago del Estero,Comando Santiago 7,Derecho,Civil,Artillería,Paula Castro,+54 9 2905 99418-1260,maria.dominguez@defensa.ar
+911,Tomás Vega,45481104,1963-04-30,Armada,Guardiamarina,Cuyo,Mendoza,Base Naval Mendoza 4,Informática,Curso Básico,Inteligencia,Magdalena Orozco,+54 9 1101 79953-3169,tomas.vega@defensa.ar
+912,Julieta Vega,22806417,1982-07-31,Fuerza Aérea,Comodoro,Cuyo,San Luis,Comando San Luis 6,Geografía,Curso Básico,Logística,Santiago Correa,+54 9 039 79798-6249,julieta.vega@defensa.ar
+913,Mercedes Bravo,50502795,1994-03-05,Ejército,Cabo,Cuyo,San Juan,Brigada San Juan 9,Informática,Curso Avanzado,Comunicaciones,Emilia Orozco,+54 9 2986 48956-4504,mercedes.bravo@defensa.ar
+914,Emilia Peralta,42702654,1994-01-10,Ejército,Capitán,Centro,Ciudad Autónoma de Buenos Aires,Brigada CABA 2,Administración,Curso Básico,Piloto,Valentina Bravo,+54 9 1433 22082-9102,emilia.peralta@defensa.ar
+915,Francisco Muñoz,35167257,1999-05-05,Fuerza Aérea,Capitán,Cuyo,San Luis,Base Aérea San Luis 3,Informática,Curso Básico,Ingeniero,Facundo Domínguez,+54 9 1256 25366-8296,francisco.munoz@defensa.ar
+916,Gonzalo Ponce,56150451,1973-08-27,Ejército,Soldado,Cuyo,San Juan,Batallón San Juan 1,Administración,Militar,Logística,Paula Martínez,+54 9 538 88528-9907,gonzalo.ponce@defensa.ar
+917,Juan Sánchez,27390259,1980-02-10,Armada,Sargento,NOA,La Rioja,Comando La Rioja 7,Geografía,Curso Intermedio,Logística,Rocío Correa,+54 9 1567 64128-4495,juan.sanchez@defensa.ar
+918,Facundo Acosta,53939511,1965-02-15,Fuerza Aérea,Cabo,Patagonia,Río Negro,Base Aérea Viedma 3,Medicina,Curso Avanzado,Piloto,Facundo Vega,+54 9 165 58163-3097,facundo.acosta@defensa.ar
+919,Benjamín Vázquez,49581279,1971-09-23,Ejército,Capitán,Cuyo,San Juan,Sección San Juan 7,Historia,Civil,Piloto,Magdalena Torres,+54 9 2665 72647-5703,benjamin.vazquez@defensa.ar
+920,Lautaro Torres,32985103,2003-01-15,Ejército,Cabo,Patagonia,Tierra del Fuego,Batallón Ushuaia 6,Informática,Curso Avanzado,Artillería,María Benítez,+54 9 404 98478-6248,lautaro.torres@defensa.ar
+921,Gael Torres,20279866,1996-09-04,Armada,Marinero,Centro,Entre Ríos,Comando Paraná 1,Relaciones Internacionales,Curso Básico,Logística,Ana Domínguez,+54 9 914 95933-9415,gael.torres@defensa.ar
+922,José Fernández,31955823,1992-04-11,Ejército,Capitán,Patagonia,Chubut,Batallón Rawson 4,Derecho,Curso Básico,Médico,Malena López,+54 9 740 94886-4210,jose.fernandez@defensa.ar
+923,José Figueroa,51236568,1998-07-31,Armada,Marinero,NEA,Chaco,Base Naval Resistencia 5,Geografía,Militar,Sanidad,Martina Castro,+54 9 1944 20819-7713,jose.figueroa@defensa.ar
+924,Isabella Ponce,25338221,1975-08-23,Ejército,Sargento,Patagonia,Tierra del Fuego,Brigada Ushuaia 2,Geografía,Curso Avanzado,Médico,Ana Ortega,+54 9 1094 99947-3496,isabella.ponce@defensa.ar
+925,Nicolás Castro,47042208,1993-08-07,Fuerza Aérea,Capitán,NEA,Formosa,Escuadrón Formosa 8,Relaciones Internacionales,Militar,Piloto,Ana Quiroga,+54 9 2826 31980-8988,nicolas.castro@defensa.ar
+926,Mercedes Sosa,51541532,1988-12-13,Armada,Capitán de Fragata,Cuyo,Mendoza,Comando Mendoza 4,Contabilidad,Curso Intermedio,Piloto,Nicolás Díaz,+54 9 1279 72100-6888,mercedes.sosa@defensa.ar
+927,Francisco Fernández,28032208,1994-08-04,Fuerza Aérea,Mayor,NEA,Misiones,Escuadrón Posadas 4,Geografía,Curso Básico,Infantería,Rocío Molina,+54 9 2290 41773-3222,francisco.fernandez@defensa.ar
+928,Santiago Ibarra,27434423,1960-07-02,Ejército,Cabo,Patagonia,Tierra del Fuego,Sección Ushuaia 2,Derecho,Curso Avanzado,Caballería,Paula Gómez,+54 9 2616 91281-7271,santiago.ibarra@defensa.ar
+929,Gael Correa,45927255,1988-01-26,Armada,Capitán de Corbeta,NEA,Chaco,Comando Resistencia 3,Historia,Curso Avanzado,Logística,Tomás Luna,+54 9 1722 67861-5199,gael.correa@defensa.ar
+930,Sofía Sánchez,48236270,2002-06-23,Ejército,Mayor,Centro,Córdoba,Sección Córdoba 3,Medicina,Militar,Logística,Pablo Gómez,+54 9 2165 45380-8857,sofia.sanchez@defensa.ar
+931,Emilia Martínez,33024045,1976-09-28,Ejército,Coronel,NOA,Jujuy,Batallón San Salvador 6,Informática,Militar,Infantería,Ramiro Castro,+54 9 751 51457-5996,emilia.martinez@defensa.ar
+932,Lucía Ponce,58340265,1969-01-22,Armada,Capitán de Navío,NEA,Formosa,Brigada Formosa 7,Contabilidad,Curso Básico,Ingeniero,José López,+54 9 389 35897-1314,lucia.ponce@defensa.ar
+933,Gael Silva,52531465,1961-01-07,Armada,Capitán de Navío,NOA,La Rioja,Base Naval La Rioja 7,Ingeniería,Curso Intermedio,Logística,Gael Vázquez,+54 9 1686 44074-2377,gael.silva@defensa.ar
+934,Agustín Sosa,26363729,2002-03-22,Ejército,Teniente,NOA,Salta,Comando Salta 3,Ingeniería,Curso Básico,Logística,Pablo Herrera,+54 9 582 56072-7147,agustin.sosa@defensa.ar
+935,Pablo Navarro,24688824,1960-09-30,Fuerza Aérea,Comodoro,Centro,Santa Fe,Escuadrón Santa Fe 3,Administración,Civil,Artillería,Ezequiel Vázquez,+54 9 829 25390-5620,pablo.navarro@defensa.ar
+936,Martina Quiroga,52176052,1970-10-06,Armada,Capitán de Fragata,Patagonia,Chubut,Apostadero Rawson 8,Contabilidad,Militar,Infantería,Tomás González,+54 9 047 99111-7393,martina.quiroga@defensa.ar
+937,Abril Herrera,55387296,1981-11-10,Ejército,Mayor,Centro,La Pampa,Batallón Santa Rosa 5,Historia,Curso Avanzado,Sanidad,Benjamín Ramírez,+54 9 1421 22215-7461,abril.herrera@defensa.ar
+938,Joaquín Peralta,35915492,1967-12-19,Armada,Capitán de Navío,NOA,Tucumán,Base Naval San Miguel de Tucumán 8,Historia,Civil,Inteligencia,Valentina Álvarez,+54 9 320 42328-8560,joaquin.peralta@defensa.ar
+939,Santiago Martínez,49921501,1972-04-18,Armada,Guardiamarina,NOA,La Rioja,Apostadero La Rioja 3,Administración,Militar,Infantería,Facundo Ramírez,+54 9 1359 88737-6576,santiago.martinez@defensa.ar
+940,Pablo Vega,45206689,1995-08-26,Ejército,Subteniente,Centro,La Pampa,Batallón Santa Rosa 2,Informática,Curso Básico,Médico,Lucía Navarro,+54 9 1658 77366-3560,pablo.vega@defensa.ar
+941,Pablo Rodríguez,23343520,1977-04-04,Fuerza Aérea,Teniente,NOA,Santiago del Estero,Comando Santiago 9,Informática,Curso Básico,Comunicaciones,Julieta Cáceres,+54 9 527 29866-8658,pablo.rodriguez@defensa.ar
+942,Carolina Gutiérrez,45445553,1987-08-21,Armada,Capitán de Corbeta,NEA,Corrientes,Brigada Corrientes 4,Medicina,Civil,Ingeniero,Magdalena Rodríguez,+54 9 2538 43897-6085,carolina.gutierrez@defensa.ar
+943,Mateo Álvarez,30412946,1971-03-26,Ejército,Soldado,NEA,Misiones,Batallón Posadas 7,Medicina,Civil,Ingeniero,José Gutiérrez,+54 9 1683 98014-6684,mateo.alvarez@defensa.ar
+944,Camila Martínez,58051451,1965-09-03,Ejército,Teniente,NOA,Tucumán,Brigada San Miguel de Tucumán 7,Geografía,Curso Avanzado,Caballería,María Rodríguez,+54 9 1487 70996-9453,camila.martinez@defensa.ar
+945,Nicolás Cáceres,24311404,1967-12-17,Fuerza Aérea,Comodoro,Patagonia,Chubut,Comando Rawson 8,Contabilidad,Curso Intermedio,Piloto,Ailén Ramírez,+54 9 2844 51600-2385,nicolas.caceres@defensa.ar
+946,Sofía Romero,38602881,1966-07-22,Armada,Guardiamarina,NOA,Tucumán,Apostadero San Miguel de Tucumán 7,Medicina,Curso Básico,Infantería,Mateo Rojas,+54 9 1430 63886-4845,sofia.romero@defensa.ar
+947,Ana Flores,45913021,1973-01-20,Armada,Marinero,NOA,La Rioja,Comando La Rioja 9,Historia,Militar,Comunicaciones,Tomás Romero,+54 9 745 47249-2201,ana.flores@defensa.ar
+948,Valentina Gutiérrez,45687233,2004-05-03,Fuerza Aérea,Alférez,Centro,Santa Fe,Escuadrón Santa Fe 2,Relaciones Internacionales,Curso Intermedio,Logística,Santiago Gutiérrez,+54 9 1810 94879-2103,valentina.gutierrez@defensa.ar
+949,Gonzalo Gutiérrez,38967050,1985-07-30,Ejército,Coronel,Centro,Santa Fe,Sección Santa Fe 7,Contabilidad,Curso Avanzado,Piloto,Juan Silva,+54 9 1754 64401-9923,gonzalo.gutierrez@defensa.ar
+950,Ailén Pérez,30671334,1973-08-15,Ejército,Capitán,Cuyo,Mendoza,Batallón Mendoza 3,Psicología,Civil,Ingeniero,Lautaro González,+54 9 789 21648-6426,ailen.perez@defensa.ar
+951,Iván Acosta,43865308,1987-08-04,Ejército,Cabo,NOA,Catamarca,Comando San Fernando del Valle 4,Medicina,Militar,Ingeniero,Lucía Pérez,+54 9 1958 50373-1281,ivan.acosta@defensa.ar
+952,Malena Gómez,20238467,1991-09-28,Fuerza Aérea,Comodoro,Centro,Ciudad Autónoma de Buenos Aires,Comando CABA 9,Contabilidad,Curso Intermedio,Artillería,Iván Silva,+54 9 407 53606-3942,malena.gomez@defensa.ar
+953,Abril Rojas,59739436,1997-12-22,Fuerza Aérea,Alférez,Patagonia,Santa Cruz,Comando Río Gallegos 1,Ingeniería,Militar,Ingeniero,Gael Muñoz,+54 9 483 20798-5090,abril.rojas@defensa.ar
+954,Isabella Torres,42148371,1975-12-04,Ejército,Capitán,Centro,Santa Fe,Sección Santa Fe 2,Derecho,Curso Intermedio,Artillería,Camila Martínez,+54 9 1573 84037-3169,isabella.torres@defensa.ar
+955,Facundo Martínez,58684989,1994-04-04,Ejército,Soldado,Patagonia,Tierra del Fuego,Brigada Ushuaia 3,Geografía,Curso Intermedio,Logística,Gael Ramírez,+54 9 811 94829-3354,facundo.martinez@defensa.ar
+956,Sofía Ortega,56470978,1975-03-15,Armada,Guardiamarina,NOA,Jujuy,Brigada San Salvador 7,Derecho,Curso Intermedio,Inteligencia,Magdalena Cáceres,+54 9 2036 71249-3730,sofia.ortega@defensa.ar
+957,Tomás Domínguez,56300793,1993-05-15,Fuerza Aérea,Cabo,Centro,Ciudad Autónoma de Buenos Aires,Base Aérea CABA 6,Informática,Curso Avanzado,Sanidad,Emilia González,+54 9 2445 46195-5970,tomas.dominguez@defensa.ar
+958,Francisco Torres,22770614,1981-09-06,Armada,Marinero,NEA,Chaco,Apostadero Resistencia 8,Derecho,Curso Intermedio,Médico,Ana Silva,+54 9 2833 60155-6034,francisco.torres@defensa.ar
+959,Facundo Fernández,25166491,1992-07-07,Armada,Guardiamarina,NEA,Chaco,Comando Resistencia 4,Derecho,Curso Intermedio,Ingeniero,Emilia Martínez,+54 9 548 48520-7492,facundo.fernandez@defensa.ar
+960,Santiago Suárez,30449718,1981-05-16,Armada,Teniente de Navío,Centro,Ciudad Autónoma de Buenos Aires,Brigada CABA 6,Contabilidad,Curso Avanzado,Sanidad,Valentina Ponce,+54 9 2684 64154-2469,santiago.suarez@defensa.ar
+961,Lautaro Flores,27708314,1973-03-14,Ejército,Cabo,Centro,Córdoba,Brigada Córdoba 5,Contabilidad,Curso Básico,Logística,Lucía Torres,+54 9 2878 50348-8747,lautaro.flores@defensa.ar
+962,Benjamín Gómez,55818358,1991-02-09,Ejército,Capitán,NOA,La Rioja,Comando La Rioja 3,Contabilidad,Civil,Artillería,Ana Sosa,+54 9 997 69771-3633,benjamin.gomez@defensa.ar
+963,Abril Pérez,40478291,1983-04-14,Fuerza Aérea,Comodoro,Patagonia,Neuquén,Escuadrón Neuquén 9,Psicología,Curso Intermedio,Artillería,Mateo Sosa,+54 9 141 93918-6505,abril.perez@defensa.ar
+964,José Peralta,32676501,1991-03-01,Armada,Guardiamarina,Centro,Buenos Aires,Apostadero La Plata 8,Informática,Civil,Ingeniero,Lautaro Navarro,+54 9 554 66638-6326,jose.peralta@defensa.ar
+965,Facundo Luna,52677275,1980-05-14,Fuerza Aérea,Cabo,Centro,Entre Ríos,Escuadrón Paraná 2,Relaciones Internacionales,Militar,Médico,Benjamín Bravo,+54 9 2168 64904-2594,facundo.luna@defensa.ar
+966,Magdalena Romero,55922974,1982-07-02,Armada,Marinero,Centro,Santa Fe,Brigada Santa Fe 6,Psicología,Militar,Inteligencia,Abril Suárez,+54 9 168 85889-6986,magdalena.romero@defensa.ar
+967,Paula Silva,55208783,2002-07-22,Ejército,Subteniente,Cuyo,San Juan,Batallón San Juan 4,Geografía,Civil,Caballería,Julieta Orozco,+54 9 1021 55452-8603,paula.silva@defensa.ar
+968,Valentina Rodríguez,43414669,1989-06-20,Ejército,Capitán,NEA,Chaco,Brigada Resistencia 6,Ingeniería,Civil,Caballería,Nicolás Martínez,+54 9 2781 21267-1573,valentina.rodriguez@defensa.ar
+969,Valentina Gómez,30697556,2004-08-08,Armada,Guardiamarina,NOA,Tucumán,Base Naval San Miguel de Tucumán 1,Ingeniería,Civil,Artillería,Malena Díaz,+54 9 1934 91476-9255,valentina.gomez@defensa.ar
+970,Mercedes Suárez,57253802,1984-01-23,Fuerza Aérea,Cabo,Patagonia,Río Negro,Comando Viedma 7,Administración,Militar,Caballería,Gonzalo González,+54 9 1387 87567-5197,mercedes.suarez@defensa.ar
+971,Lautaro Muñoz,51583639,1978-09-11,Armada,Capitán de Fragata,Cuyo,San Luis,Comando San Luis 5,Psicología,Curso Básico,Inteligencia,Sofía Correa,+54 9 1285 85991-2029,lautaro.munoz@defensa.ar
+972,Santiago Navarro,46060582,1975-02-22,Ejército,Coronel,NOA,Catamarca,Brigada San Fernando del Valle 7,Relaciones Internacionales,Curso Intermedio,Piloto,Lautaro Silva,+54 9 1909 89741-4978,santiago.navarro@defensa.ar
+973,Camila Romero,39541214,1979-11-28,Armada,Capitán de Navío,Cuyo,San Luis,Comando San Luis 2,Ingeniería,Civil,Médico,Nahuel Orozco,+54 9 412 34376-8894,camila.romero@defensa.ar
+974,Ana Vega,24081318,1984-11-02,Ejército,Subteniente,Centro,Buenos Aires,Comando La Plata 7,Derecho,Curso Avanzado,Piloto,Gonzalo Figueroa,+54 9 1355 94518-7631,ana.vega@defensa.ar
+975,Malena Flores,31638333,1991-06-02,Ejército,Sargento,Patagonia,Río Negro,Sección Viedma 7,Administración,Civil,Inteligencia,Camila Benítez,+54 9 2998 96043-7656,malena.flores@defensa.ar
+976,Paula Rodríguez,47281652,1981-09-23,Ejército,Cabo,Cuyo,Mendoza,Comando Mendoza 1,Informática,Curso Avanzado,Caballería,Ezequiel Romero,+54 9 364 48768-4095,paula.rodriguez@defensa.ar
+977,Julieta Rodríguez,31171557,2006-04-12,Ejército,Soldado,Centro,Buenos Aires,Batallón La Plata 1,Administración,Militar,Logística,Malena Suárez,+54 9 1957 70795-9401,julieta.rodriguez@defensa.ar
+978,Ailén Sosa,27918464,1964-02-05,Armada,Guardiamarina,NOA,Catamarca,Base Naval San Fernando del Valle 2,Psicología,Curso Intermedio,Sanidad,Malena Ramírez,+54 9 847 29253-3605,ailen.sosa@defensa.ar
+979,Camila Luna,54446147,1979-07-07,Ejército,Teniente,Cuyo,Mendoza,Sección Mendoza 8,Administración,Curso Avanzado,Ingeniero,Joaquín Luna,+54 9 971 63410-5603,camila.luna@defensa.ar
+980,Julieta Flores,26340099,1977-03-21,Fuerza Aérea,Aviador,Centro,La Pampa,Comando Santa Rosa 2,Informática,Curso Intermedio,Sanidad,Martina Acosta,+54 9 1947 73788-7162,julieta.flores@defensa.ar
+981,Facundo Pérez,40309469,1987-12-24,Ejército,Teniente,Centro,Ciudad Autónoma de Buenos Aires,Batallón CABA 1,Contabilidad,Curso Intermedio,Piloto,María Bravo,+54 9 1527 40621-3336,facundo.perez@defensa.ar
+982,Mateo Gómez,38888666,1974-08-22,Fuerza Aérea,Comodoro,NEA,Misiones,Comando Posadas 3,Psicología,Curso Intermedio,Médico,Rocío Quiroga,+54 9 2145 66540-7712,mateo.gomez@defensa.ar
+983,Julieta Rojas,39600744,2000-10-22,Fuerza Aérea,Comodoro,Patagonia,Neuquén,Comando Neuquén 4,Psicología,Curso Avanzado,Piloto,Nicolás Romero,+54 9 315 78426-6862,julieta.rojas@defensa.ar
+984,Carolina Cáceres,31206015,2005-04-26,Armada,Capitán de Fragata,NOA,Tucumán,Brigada San Miguel de Tucumán 7,Relaciones Internacionales,Curso Básico,Sanidad,Magdalena Rodríguez,+54 9 2694 31018-5189,carolina.caceres@defensa.ar
+985,Malena Pérez,51849093,1989-11-13,Armada,Cabo,Centro,La Pampa,Brigada Santa Rosa 3,Administración,Curso Intermedio,Inteligencia,Abril Quiroga,+54 9 207 96028-3377,malena.perez@defensa.ar
+986,Mateo Ibarra,26617593,1969-04-19,Fuerza Aérea,Cabo,NOA,Tucumán,Comando San Miguel de Tucumán 8,Historia,Curso Avanzado,Ingeniero,Emilia López,+54 9 1046 25996-4437,mateo.ibarra@defensa.ar
+987,Mercedes Flores,28589716,1983-12-06,Armada,Capitán de Navío,Patagonia,Chubut,Base Naval Rawson 8,Administración,Curso Intermedio,Médico,Isabella Flores,+54 9 2868 81120-4548,mercedes.flores@defensa.ar
+988,Nahuel Benítez,57638530,1986-06-09,Armada,Sargento,NOA,Jujuy,Base Naval San Salvador 6,Medicina,Militar,Piloto,Iván Gutiérrez,+54 9 2648 95419-1480,nahuel.benitez@defensa.ar
+989,Gael Herrera,42141389,1962-11-14,Fuerza Aérea,Alférez,Cuyo,San Luis,Escuadrón San Luis 4,Administración,Curso Básico,Logística,Joaquín Gutiérrez,+54 9 041 59568-3522,gael.herrera@defensa.ar
+990,Felipe Álvarez,24504641,1964-07-05,Armada,Cabo,NOA,Jujuy,Apostadero San Salvador 9,Historia,Curso Avanzado,Sanidad,Martina Fernández,+54 9 2039 96656-3491,felipe.alvarez@defensa.ar
+991,Malena Navarro,45718009,1999-05-01,Ejército,Capitán,NOA,La Rioja,Batallón La Rioja 9,Derecho,Curso Básico,Piloto,Gael Rojas,+54 9 693 62422-3463,malena.navarro@defensa.ar
+992,Iván Luna,37158548,1991-08-25,Armada,Capitán de Fragata,NOA,Salta,Apostadero Salta 6,Derecho,Civil,Logística,Mercedes Torres,+54 9 2284 23202-8458,ivan.luna@defensa.ar
+993,José Cáceres,23285128,1998-05-01,Armada,Cabo,NOA,Catamarca,Base Naval San Fernando del Valle 9,Contabilidad,Curso Básico,Piloto,Magdalena Herrera,+54 9 1227 27991-4767,jose.caceres@defensa.ar
+994,Mercedes Castro,41691671,1964-02-01,Fuerza Aérea,Sargento,Cuyo,San Luis,Base Aérea San Luis 6,Contabilidad,Curso Básico,Caballería,Gonzalo Muñoz,+54 9 2727 96973-7422,mercedes.castro@defensa.ar
+995,Ailén Herrera,48816460,1978-07-21,Fuerza Aérea,Alférez,Centro,Córdoba,Comando Córdoba 8,Derecho,Militar,Médico,Lucía López,+54 9 1516 81531-3959,ailen.herrera@defensa.ar
+996,Valentina Suárez,41160089,1986-02-19,Fuerza Aérea,Sargento,Centro,Ciudad Autónoma de Buenos Aires,Escuadrón CABA 1,Informática,Civil,Ingeniero,Gael Figueroa,+54 9 1276 71326-9246,valentina.suarez@defensa.ar
+997,Carolina Rojas,46258470,1989-07-16,Fuerza Aérea,Comodoro,Patagonia,Río Negro,Escuadrón Viedma 8,Geografía,Curso Avanzado,Artillería,Francisco Luna,+54 9 1472 23341-7096,carolina.rojas@defensa.ar
+998,Sofía Navarro,29996852,1969-04-13,Armada,Cabo,NEA,Formosa,Apostadero Formosa 8,Administración,Curso Básico,Infantería,Pablo Luna,+54 9 2215 86397-4434,sofia.navarro@defensa.ar
+999,Lautaro Luna,35854988,1978-05-30,Armada,Capitán de Navío,Centro,Santa Fe,Comando Santa Fe 8,Derecho,Curso Avanzado,Infantería,Juan Quiroga,+54 9 023 26367-8108,lautaro.luna@defensa.ar
+1000,Gonzalo Suárez,37033320,1994-10-26,Fuerza Aérea,Aviador,NOA,La Rioja,Comando La Rioja 3,Derecho,Curso Intermedio,Médico,Camila Cáceres,+54 9 1663 21373-7996,gonzalo.suarez@defensa.ar
+1001,Mateo Ramírez,27469967,1976-05-28,Ejército,Capitán,NOA,Salta,Comando Salta 2,Historia,Curso Básico,Comunicaciones,Nicolás Cáceres,+54 9 335 38956-1009,mateo.ramirez@defensa.ar
+1002,Ailén Figueroa,43063282,1976-11-07,Ejército,Mayor,Centro,Córdoba,Brigada Córdoba 8,Administración,Militar,Infantería,Sofía Ortega,+54 9 1104 63778-4177,ailen.figueroa@defensa.ar
+1003,Lautaro Fernández,46764718,2003-03-26,Ejército,Teniente,Centro,Córdoba,Batallón Córdoba 6,Contabilidad,Civil,Comunicaciones,Nahuel Castro,+54 9 2264 41424-7534,lautaro.fernandez@defensa.ar
+1004,Carolina Rodríguez,42233076,1995-04-06,Fuerza Aérea,Cabo,Patagonia,Neuquén,Comando Neuquén 5,Contabilidad,Curso Intermedio,Ingeniero,Francisco Figueroa,+54 9 577 59666-6881,carolina.rodriguez@defensa.ar
+1005,Facundo Quiroga,23425857,1963-09-03,Armada,Marinero,Patagonia,Santa Cruz,Comando Río Gallegos 8,Medicina,Curso Intermedio,Sanidad,Rocío Torres,+54 9 108 70327-1158,facundo.quiroga@defensa.ar
+1006,Agustín Fernández,57993712,1993-07-07,Fuerza Aérea,Comodoro,NEA,Formosa,Comando Formosa 7,Historia,Curso Básico,Caballería,Lautaro Martínez,+54 9 2919 57458-4007,agustin.fernandez@defensa.ar
+1007,Gael Sosa,49589077,1978-08-26,Fuerza Aérea,Cabo,NOA,Tucumán,Comando San Miguel de Tucumán 5,Ingeniería,Civil,Comunicaciones,Mateo Ramírez,+54 9 2524 33043-2690,gael.sosa@defensa.ar
+1008,Paula Vázquez,32729103,1998-02-19,Armada,Capitán de Fragata,Centro,Entre Ríos,Comando Paraná 5,Relaciones Internacionales,Civil,Logística,Pablo Benítez,+54 9 369 66450-4002,paula.vazquez@defensa.ar
+1009,Lucía Muñoz,53895351,1983-10-18,Ejército,Sargento,NOA,Catamarca,Comando San Fernando del Valle 1,Psicología,Curso Intermedio,Médico,Abril Domínguez,+54 9 2592 30342-8956,lucia.munoz@defensa.ar
+1010,Iván Bravo,53099656,1975-03-08,Armada,Capitán de Fragata,NOA,La Rioja,Comando La Rioja 2,Medicina,Curso Intermedio,Infantería,Juan Rodríguez,+54 9 2599 73451-1803,ivan.bravo@defensa.ar
+1011,Santiago Vega,34966873,1979-06-27,Armada,Capitán de Fragata,Centro,Santa Fe,Base Naval Santa Fe 7,Contabilidad,Civil,Médico,Agustín Díaz,+54 9 340 29322-7722,santiago.vega@defensa.ar
+1012,Gonzalo Domínguez,27727786,1992-06-26,Fuerza Aérea,Comodoro,Patagonia,Neuquén,Base Aérea Neuquén 3,Informática,Militar,Sanidad,Iván Ponce,+54 9 2542 38935-8883,gonzalo.dominguez@defensa.ar
+1013,Felipe Martínez,36055722,1993-08-01,Fuerza Aérea,Aviador,Patagonia,Neuquén,Comando Neuquén 7,Psicología,Civil,Ingeniero,Gonzalo Luna,+54 9 2862 39729-7878,felipe.martinez@defensa.ar
+1014,Facundo Díaz,44594378,1963-10-04,Ejército,Mayor,Centro,La Pampa,Brigada Santa Rosa 1,Geografía,Curso Básico,Ingeniero,Camila Acosta,+54 9 878 91657-7538,facundo.diaz@defensa.ar
+1015,Lucía Gutiérrez,37634703,1997-09-12,Armada,Cabo,NEA,Formosa,Brigada Formosa 9,Informática,Curso Avanzado,Infantería,Mateo Figueroa,+54 9 2150 96103-1763,lucia.gutierrez@defensa.ar
+1016,Joaquín Ibarra,43844428,1978-02-05,Fuerza Aérea,Sargento,Cuyo,San Luis,Comando San Luis 1,Informática,Curso Intermedio,Médico,Facundo Castro,+54 9 1152 22859-6272,joaquin.ibarra@defensa.ar
+1017,Lucía Pérez,52434576,1991-04-21,Armada,Guardiamarina,Centro,Santa Fe,Brigada Santa Fe 2,Ingeniería,Curso Básico,Comunicaciones,Diego Vega,+54 9 1476 64351-6675,lucia.perez@defensa.ar
+1018,Tomás Navarro,30503594,1989-01-17,Ejército,Subteniente,NEA,Misiones,Sección Posadas 9,Medicina,Curso Avanzado,Comunicaciones,Santiago Martínez,+54 9 1460 47734-2018,tomas.navarro@defensa.ar
+1019,Benjamín Molina,42312851,1967-02-08,Ejército,Teniente,Patagonia,Neuquén,Sección Neuquén 1,Derecho,Curso Intermedio,Piloto,Felipe Pérez,+54 9 282 76856-5253,benjamin.molina@defensa.ar
+1020,Gonzalo Álvarez,29231319,1968-06-04,Ejército,Subteniente,Centro,La Pampa,Batallón Santa Rosa 1,Ingeniería,Civil,Comunicaciones,Tomás Correa,+54 9 2900 86288-1556,gonzalo.alvarez@defensa.ar
+1021,Agustín Molina,38137553,2000-04-11,Ejército,Subteniente,NOA,Jujuy,Sección San Salvador 9,Administración,Curso Avanzado,Infantería,Nahuel Ponce,+54 9 561 65436-7911,agustin.molina@defensa.ar
+1022,Valentina González,29298531,1972-09-02,Fuerza Aérea,Cabo,Patagonia,Río Negro,Comando Viedma 8,Geografía,Curso Avanzado,Sanidad,Nicolás Ibarra,+54 9 741 98929-1752,valentina.gonzalez@defensa.ar
+1023,Ramiro Cáceres,51786061,1990-07-22,Ejército,Teniente,Patagonia,Chubut,Batallón Rawson 5,Medicina,Militar,Logística,Joaquín Díaz,+54 9 2972 31459-7404,ramiro.caceres@defensa.ar
+1024,Paula Torres,36471303,1987-04-19,Fuerza Aérea,Cabo,Cuyo,San Luis,Comando San Luis 3,Derecho,Curso Avanzado,Sanidad,Facundo Luna,+54 9 1865 35470-4739,paula.torres@defensa.ar
+1025,Agustín Vázquez,54350310,1992-10-25,Fuerza Aérea,Mayor,Centro,Santa Fe,Base Aérea Santa Fe 2,Administración,Curso Básico,Inteligencia,Emilia Peralta,+54 9 2454 48072-9841,agustin.vazquez@defensa.ar
+1026,Paula Benítez,41206891,1994-06-18,Ejército,Sargento,Centro,Córdoba,Comando Córdoba 7,Administración,Curso Avanzado,Médico,Iván Martínez,+54 9 1038 42091-6869,paula.benitez@defensa.ar
+1027,Abril Quiroga,35146141,1975-02-24,Armada,Capitán de Navío,Centro,Córdoba,Apostadero Córdoba 1,Ingeniería,Militar,Artillería,Valentina López,+54 9 153 80538-8189,abril.quiroga@defensa.ar
+1028,Julieta Peralta,59083657,2003-09-25,Ejército,Coronel,Centro,Ciudad Autónoma de Buenos Aires,Sección CABA 3,Psicología,Curso Intermedio,Artillería,Lucía González,+54 9 2931 39687-8401,julieta.peralta@defensa.ar
+1029,Renata Luna,57145864,1963-06-18,Ejército,Soldado,Centro,Entre Ríos,Sección Paraná 3,Administración,Militar,Artillería,Camila Díaz,+54 9 1670 28467-5234,renata.luna@defensa.ar
+1030,Nicolás Martínez,20351931,1962-05-06,Armada,Capitán de Fragata,NEA,Corrientes,Base Naval Corrientes 5,Administración,Civil,Artillería,Diego Rodríguez,+54 9 1946 55940-7515,nicolas.martinez@defensa.ar
+1031,Emilia Muñoz,46266169,1961-09-22,Ejército,Sargento,Centro,Ciudad Autónoma de Buenos Aires,Sección CABA 6,Geografía,Curso Básico,Infantería,Pablo Castro,+54 9 2911 87383-1162,emilia.munoz@defensa.ar
+1032,Valentina Domínguez,57239886,1982-01-09,Ejército,Mayor,NOA,La Rioja,Comando La Rioja 9,Medicina,Curso Avanzado,Médico,Ramiro Figueroa,+54 9 2814 36322-6916,valentina.dominguez@defensa.ar
+1033,Abril Fernández,22194318,1983-06-11,Fuerza Aérea,Sargento,Patagonia,Tierra del Fuego,Base Aérea Ushuaia 7,Psicología,Curso Intermedio,Caballería,Magdalena Quiroga,+54 9 1000 89032-9122,abril.fernandez@defensa.ar
+1034,Lautaro Vázquez,56117219,1965-08-04,Ejército,Teniente,Patagonia,Chubut,Batallón Rawson 5,Administración,Militar,Comunicaciones,Ailén Quiroga,+54 9 332 65845-8942,lautaro.vazquez@defensa.ar
+1035,Sofía Muñoz,29594489,1987-12-26,Ejército,Sargento,Cuyo,San Juan,Sección San Juan 7,Historia,Civil,Sanidad,Mercedes Ramírez,+54 9 165 78908-1582,sofia.munoz@defensa.ar
+1036,Ailén Ponce,49178536,1984-10-21,Armada,Capitán de Fragata,Cuyo,Mendoza,Brigada Mendoza 2,Contabilidad,Curso Básico,Logística,Magdalena Castro,+54 9 2961 34508-1628,ailen.ponce@defensa.ar
+1037,Mercedes Pérez,36642186,1981-06-29,Ejército,Teniente,NOA,La Rioja,Batallón La Rioja 1,Relaciones Internacionales,Militar,Comunicaciones,Agustín Rojas,+54 9 1188 58653-5000,mercedes.perez@defensa.ar
+1038,Malena Herrera,58698550,1987-01-20,Fuerza Aérea,Comodoro,NEA,Chaco,Comando Resistencia 6,Ingeniería,Civil,Artillería,Mateo Álvarez,+54 9 162 48143-2053,malena.herrera@defensa.ar
+1039,Paula Sánchez,47036834,1996-07-16,Armada,Sargento,Patagonia,Chubut,Base Naval Rawson 8,Ingeniería,Curso Básico,Comunicaciones,Iván González,+54 9 1110 70487-5423,paula.sanchez@defensa.ar
+1040,Juan Flores,37332063,1988-08-12,Armada,Capitán de Corbeta,Cuyo,Mendoza,Apostadero Mendoza 2,Psicología,Curso Básico,Caballería,Santiago Benítez,+54 9 1116 89909-9571,juan.flores@defensa.ar
+1041,Lucía Correa,58667326,2004-05-30,Ejército,Teniente,Centro,Ciudad Autónoma de Buenos Aires,Comando CABA 8,Derecho,Curso Avanzado,Médico,Joaquín Álvarez,+54 9 1005 24729-4527,lucia.correa@defensa.ar
+1042,Isabella Ortega,58763835,1997-08-06,Armada,Capitán de Navío,Centro,Córdoba,Apostadero Córdoba 8,Psicología,Curso Intermedio,Inteligencia,Iván Molina,+54 9 1696 38076-3894,isabella.ortega@defensa.ar
+1043,Isabella Bravo,23483846,1978-06-17,Armada,Sargento,NOA,Tucumán,Comando San Miguel de Tucumán 9,Ingeniería,Militar,Sanidad,Paula Cáceres,+54 9 2887 55984-9897,isabella.bravo@defensa.ar
+1044,Lucía Sánchez,26953501,1974-11-11,Armada,Marinero,Cuyo,Mendoza,Brigada Mendoza 2,Medicina,Curso Avanzado,Caballería,Ana Figueroa,+54 9 1016 39713-3496,lucia.sanchez@defensa.ar
+1045,Francisco Vega,43250082,1964-09-21,Armada,Teniente de Navío,NOA,Santiago del Estero,Comando Santiago 8,Historia,Curso Intermedio,Caballería,Iván Vázquez,+54 9 2211 32694-1707,francisco.vega@defensa.ar
+1046,Gonzalo Muñoz,31465682,1989-04-16,Fuerza Aérea,Aviador,NEA,Misiones,Comando Posadas 4,Administración,Curso Básico,Piloto,Francisco López,+54 9 1901 75327-3892,gonzalo.munoz@defensa.ar
+1047,Nicolás Pérez,32561021,1975-12-25,Fuerza Aérea,Sargento,Centro,Entre Ríos,Comando Paraná 1,Medicina,Civil,Caballería,Abril Domínguez,+54 9 803 32791-4441,nicolas.perez@defensa.ar
+1048,Francisco Ibarra,29729538,2000-03-02,Fuerza Aérea,Teniente,NOA,Salta,Escuadrón Salta 5,Relaciones Internacionales,Civil,Logística,Nicolás Luna,+54 9 1745 28731-4678,francisco.ibarra@defensa.ar
+1049,José Romero,42625565,1965-12-03,Armada,Marinero,Centro,Ciudad Autónoma de Buenos Aires,Apostadero CABA 3,Ingeniería,Curso Intermedio,Comunicaciones,Pablo Herrera,+54 9 2884 76211-1171,jose.romero@defensa.ar
+1050,Benjamín Ramírez,27259522,1973-01-10,Ejército,Coronel,NOA,Jujuy,Batallón San Salvador 9,Informática,Civil,Inteligencia,Juan González,+54 9 1747 76986-3340,benjamin.ramirez@defensa.ar
+1051,Ana Fernández,28859579,1984-08-27,Fuerza Aérea,Alférez,Centro,Entre Ríos,Base Aérea Paraná 6,Ingeniería,Curso Avanzado,Sanidad,Malena Castro,+54 9 2895 82438-1148,ana.fernandez@defensa.ar
+1052,Mateo Luna,32097490,1982-11-24,Armada,Capitán de Navío,NEA,Corrientes,Comando Corrientes 4,Geografía,Curso Intermedio,Comunicaciones,Valentina Sánchez,+54 9 151 48491-3994,mateo.luna@defensa.ar
+1053,María Gómez,59404378,2004-03-30,Fuerza Aérea,Mayor,NOA,La Rioja,Base Aérea La Rioja 4,Psicología,Militar,Sanidad,Julieta Figueroa,+54 9 2532 21325-6824,maria.gomez@defensa.ar
+1054,Emilia Sánchez,52667888,1975-09-12,Ejército,Soldado,NEA,Chaco,Batallón Resistencia 1,Informática,Civil,Sanidad,Renata Correa,+54 9 543 82364-3056,emilia.sanchez@defensa.ar
+1055,Abril Romero,30167836,1994-08-03,Ejército,Teniente,NEA,Corrientes,Comando Corrientes 8,Informática,Curso Básico,Caballería,Sofía Benítez,+54 9 2942 28980-1406,abril.romero@defensa.ar
+1056,José Navarro,25110701,1975-10-28,Armada,Capitán de Corbeta,Cuyo,Mendoza,Apostadero Mendoza 1,Informática,Civil,Piloto,Malena González,+54 9 1912 30264-6953,jose.navarro@defensa.ar
+1057,Carolina Quiroga,51859663,1985-05-10,Armada,Capitán de Navío,NEA,Corrientes,Brigada Corrientes 4,Geografía,Curso Intermedio,Médico,Lucía Muñoz,+54 9 2286 90517-9139,carolina.quiroga@defensa.ar
+1058,Isabella Orozco,53492437,1991-05-15,Ejército,Soldado,Centro,La Pampa,Comando Santa Rosa 7,Derecho,Civil,Comunicaciones,Carolina Sánchez,+54 9 2137 89383-8003,isabella.orozco@defensa.ar
+1059,Mercedes Orozco,28374479,2000-03-22,Armada,Capitán de Corbeta,NOA,Tucumán,Base Naval San Miguel de Tucumán 8,Derecho,Curso Básico,Logística,Ailén Benítez,+54 9 194 38510-5977,mercedes.orozco@defensa.ar
+1060,Ezequiel Figueroa,21801689,2003-05-14,Armada,Teniente de Navío,NOA,Santiago del Estero,Comando Santiago 9,Geografía,Militar,Ingeniero,Benjamín Ibarra,+54 9 1875 52467-8266,ezequiel.figueroa@defensa.ar
+1061,Valentina Álvarez,24100176,1975-12-31,Fuerza Aérea,Alférez,Centro,Buenos Aires,Base Aérea La Plata 5,Historia,Militar,Artillería,Tomás Benítez,+54 9 1704 69218-4820,valentina.alvarez@defensa.ar
+1062,Ezequiel Benítez,37774915,1986-03-12,Fuerza Aérea,Mayor,Patagonia,Río Negro,Comando Viedma 7,Administración,Curso Avanzado,Ingeniero,Sofía Martínez,+54 9 199 73475-5341,ezequiel.benitez@defensa.ar
+1063,José Álvarez,24028161,1988-07-26,Ejército,Cabo,Centro,Entre Ríos,Batallón Paraná 3,Medicina,Civil,Infantería,Emilia Vega,+54 9 464 20195-5285,jose.alvarez@defensa.ar
+1064,Santiago Gómez,53627709,1979-09-25,Fuerza Aérea,Mayor,Centro,La Pampa,Comando Santa Rosa 7,Ingeniería,Curso Intermedio,Caballería,María Díaz,+54 9 1129 34265-8658,santiago.gomez@defensa.ar
+1065,Emilia Vega,24695755,1968-12-25,Fuerza Aérea,Comodoro,Centro,Córdoba,Comando Córdoba 3,Relaciones Internacionales,Civil,Sanidad,Felipe Correa,+54 9 2396 31408-6825,emilia.vega@defensa.ar
+1066,María Ibarra,59280997,2000-03-14,Fuerza Aérea,Teniente,NOA,Jujuy,Escuadrón San Salvador 3,Derecho,Civil,Caballería,Santiago González,+54 9 2311 61829-2965,maria.ibarra@defensa.ar
+1067,Diego Rojas,42957338,1991-12-30,Fuerza Aérea,Comodoro,NOA,Salta,Escuadrón Salta 6,Administración,Curso Intermedio,Comunicaciones,Gonzalo Acosta,+54 9 1541 71537-6026,diego.rojas@defensa.ar
+1068,Facundo Orozco,35451119,1979-05-19,Fuerza Aérea,Teniente,NOA,Tucumán,Escuadrón San Miguel de Tucumán 7,Medicina,Curso Avanzado,Logística,Diego Sánchez,+54 9 199 73738-7434,facundo.orozco@defensa.ar
+1069,Nicolás Luna,45857912,2002-03-12,Ejército,Teniente,NEA,Misiones,Comando Posadas 6,Historia,Curso Básico,Logística,Ezequiel Benítez,+54 9 918 29594-8464,nicolas.luna@defensa.ar
+1070,Renata Díaz,27223677,1994-10-09,Ejército,Subteniente,Centro,Buenos Aires,Brigada La Plata 5,Geografía,Curso Intermedio,Piloto,Magdalena Vega,+54 9 1419 77322-7106,renata.diaz@defensa.ar
+1071,José Ponce,33991972,1983-09-27,Armada,Cabo,Patagonia,Río Negro,Base Naval Viedma 4,Ingeniería,Curso Avanzado,Logística,Facundo Ortega,+54 9 1950 63937-9438,jose.ponce@defensa.ar
+1072,Joaquín Flores,47616062,1994-06-27,Ejército,Coronel,NOA,Tucumán,Sección San Miguel de Tucumán 9,Contabilidad,Civil,Infantería,Juan Peralta,+54 9 2233 62751-2756,joaquin.flores@defensa.ar
+1073,Camila Navarro,35907100,1960-09-23,Ejército,Cabo,NOA,Catamarca,Batallón San Fernando del Valle 7,Administración,Militar,Médico,Felipe Molina,+54 9 492 70803-3339,camila.navarro@defensa.ar
+1074,Emilia Romero,34775251,1990-10-26,Ejército,Subteniente,Patagonia,Chubut,Brigada Rawson 9,Contabilidad,Curso Intermedio,Infantería,Nahuel Quiroga,+54 9 206 66263-6712,emilia.romero@defensa.ar
+1075,Lucía Rojas,36399149,1968-11-24,Fuerza Aérea,Mayor,Centro,Santa Fe,Base Aérea Santa Fe 7,Psicología,Curso Avanzado,Médico,Lautaro Orozco,+54 9 1059 33370-2120,lucia.rojas@defensa.ar
+1076,Camila Orozco,35512012,1989-04-23,Ejército,Cabo,Centro,Buenos Aires,Comando La Plata 3,Ingeniería,Curso Intermedio,Médico,Isabella Romero,+54 9 757 86411-1989,camila.orozco@defensa.ar
+1077,Renata Álvarez,23431617,2001-12-05,Armada,Capitán de Navío,Centro,Entre Ríos,Apostadero Paraná 3,Geografía,Curso Avanzado,Logística,Malena Rojas,+54 9 150 41562-6939,renata.alvarez@defensa.ar
+1078,Gael Navarro,32745735,1987-06-18,Armada,Teniente de Navío,NOA,Catamarca,Brigada San Fernando del Valle 6,Medicina,Militar,Inteligencia,Gael Correa,+54 9 2374 81619-3349,gael.navarro@defensa.ar
+1079,Mercedes Muñoz,43681501,1982-07-05,Armada,Capitán de Navío,Cuyo,San Luis,Base Naval San Luis 9,Geografía,Curso Intermedio,Médico,Felipe Benítez,+54 9 2585 69000-1121,mercedes.munoz@defensa.ar
+1080,Ezequiel Ibarra,38034811,1986-03-12,Fuerza Aérea,Capitán,Centro,Entre Ríos,Base Aérea Paraná 7,Administración,Curso Avanzado,Comunicaciones,Tomás Acosta,+54 9 845 29172-7492,ezequiel.ibarra@defensa.ar
+1081,Nahuel Herrera,34501088,1976-07-30,Armada,Capitán de Fragata,Patagonia,Río Negro,Base Naval Viedma 3,Informática,Curso Intermedio,Logística,María Fernández,+54 9 2210 42004-1689,nahuel.herrera@defensa.ar
+1082,Felipe Flores,58072881,2000-03-08,Armada,Capitán de Corbeta,NEA,Formosa,Comando Formosa 2,Contabilidad,Militar,Logística,Joaquín López,+54 9 625 33797-1135,felipe.flores@defensa.ar
+1083,Rocío Peralta,25463777,1973-06-21,Fuerza Aérea,Teniente,Cuyo,Mendoza,Base Aérea Mendoza 5,Informática,Curso Intermedio,Inteligencia,Gonzalo Silva,+54 9 1460 93179-8961,rocio.peralta@defensa.ar
+1084,Carolina Ibarra,20358504,1990-11-13,Fuerza Aérea,Aviador,NOA,Catamarca,Escuadrón San Fernando del Valle 1,Ingeniería,Curso Avanzado,Piloto,Sofía Quiroga,+54 9 1120 89853-5988,carolina.ibarra@defensa.ar
+1085,Emilia Domínguez,32476078,1962-02-25,Ejército,Mayor,NOA,Tucumán,Sección San Miguel de Tucumán 3,Administración,Civil,Piloto,Magdalena Gómez,+54 9 213 31015-5971,emilia.dominguez@defensa.ar
+1086,Santiago Castro,50298474,1968-10-13,Armada,Sargento,NOA,Salta,Brigada Salta 2,Relaciones Internacionales,Curso Avanzado,Artillería,Sofía Vega,+54 9 1921 85644-8528,santiago.castro@defensa.ar
+1087,Tomás Pérez,56058681,1992-07-24,Armada,Teniente de Navío,NOA,Salta,Brigada Salta 8,Ingeniería,Curso Básico,Inteligencia,Abril Flores,+54 9 1476 62730-5072,tomas.perez@defensa.ar
+1088,Lautaro Pérez,26729575,1990-02-22,Armada,Marinero,NEA,Chaco,Brigada Resistencia 7,Administración,Curso Avanzado,Ingeniero,Julieta Díaz,+54 9 1398 39646-4483,lautaro.perez@defensa.ar
+1089,Ana Cáceres,43845988,1988-03-31,Ejército,Subteniente,NOA,Tucumán,Comando San Miguel de Tucumán 2,Contabilidad,Civil,Inteligencia,Ezequiel Benítez,+54 9 2149 97913-7737,ana.caceres@defensa.ar
+1090,Lautaro Figueroa,25607474,1962-07-31,Fuerza Aérea,Aviador,Centro,Córdoba,Base Aérea Córdoba 6,Ingeniería,Curso Intermedio,Ingeniero,Nahuel Suárez,+54 9 1502 93512-6141,lautaro.figueroa@defensa.ar
+1091,Carolina Muñoz,22736372,1993-07-17,Armada,Cabo,NEA,Corrientes,Brigada Corrientes 5,Ingeniería,Curso Avanzado,Logística,Benjamín Navarro,+54 9 2689 67470-6565,carolina.munoz@defensa.ar
+1092,Iván Ramírez,31655519,1976-10-14,Ejército,Coronel,Centro,Ciudad Autónoma de Buenos Aires,Comando CABA 5,Informática,Curso Intermedio,Comunicaciones,Tomás Orozco,+54 9 1069 32781-9494,ivan.ramirez@defensa.ar
+1093,Benjamín Torres,35677149,1995-11-30,Fuerza Aérea,Teniente,Patagonia,Chubut,Comando Rawson 7,Geografía,Militar,Caballería,Gael Silva,+54 9 2714 83306-1044,benjamin.torres@defensa.ar
+1094,Abril Ortega,55106716,1981-09-16,Ejército,Mayor,Cuyo,San Juan,Batallón San Juan 7,Contabilidad,Civil,Inteligencia,Valentina Díaz,+54 9 2114 46922-8255,abril.ortega@defensa.ar
+1095,Juan Benítez,40318348,1982-03-03,Ejército,Capitán,Centro,Ciudad Autónoma de Buenos Aires,Comando CABA 1,Derecho,Curso Básico,Médico,Benjamín Herrera,+54 9 1564 29648-2590,juan.benitez@defensa.ar
+1096,Mateo Rojas,49356897,2001-01-28,Fuerza Aérea,Cabo,NEA,Chaco,Comando Resistencia 8,Psicología,Curso Intermedio,Caballería,Juan Silva,+54 9 062 74469-2708,mateo.rojas@defensa.ar
+1097,Carolina Acosta,30356759,1977-07-24,Ejército,Teniente,NOA,Tucumán,Comando San Miguel de Tucumán 9,Contabilidad,Curso Básico,Sanidad,Carolina Bravo,+54 9 1186 32635-6280,carolina.acosta@defensa.ar
+1098,Ezequiel Cáceres,48347273,1964-01-12,Armada,Capitán de Fragata,NOA,Jujuy,Brigada San Salvador 9,Contabilidad,Curso Intermedio,Comunicaciones,Tomás Navarro,+54 9 191 36699-6018,ezequiel.caceres@defensa.ar
+1099,Ailén Peralta,42951855,1978-06-20,Ejército,Teniente,NOA,Jujuy,Comando San Salvador 5,Derecho,Curso Básico,Ingeniero,Camila Peralta,+54 9 103 70912-9862,ailen.peralta@defensa.ar
+1100,Lucía Domínguez,48921238,1986-01-26,Ejército,Subteniente,Centro,Córdoba,Comando Córdoba 6,Relaciones Internacionales,Civil,Logística,Facundo Ibarra,+54 9 2111 34805-8478,lucia.dominguez@defensa.ar
+1101,Gael Castro,34812013,1994-11-06,Ejército,Capitán,NOA,Tucumán,Comando San Miguel de Tucumán 4,Ingeniería,Curso Intermedio,Logística,Carolina Orozco,+54 9 2711 54487-3038,gael.castro@defensa.ar
+1102,Nahuel Ramírez,36911148,1976-05-02,Armada,Capitán de Navío,NOA,Tucumán,Comando San Miguel de Tucumán 8,Medicina,Curso Intermedio,Sanidad,Benjamín Molina,+54 9 1161 78843-2929,nahuel.ramirez@defensa.ar
+1103,Valentina Ortega,38837621,1961-01-04,Fuerza Aérea,Capitán,NEA,Misiones,Base Aérea Posadas 3,Historia,Curso Intermedio,Infantería,María Pérez,+54 9 1793 63339-4288,valentina.ortega@defensa.ar
+1104,Martina Sánchez,56122403,1996-07-08,Fuerza Aérea,Cabo,NEA,Formosa,Base Aérea Formosa 9,Ingeniería,Militar,Inteligencia,Iván Gómez,+54 9 481 57120-9663,martina.sanchez@defensa.ar
+1105,Agustín Ponce,57552016,1963-11-28,Ejército,Teniente,Patagonia,Neuquén,Comando Neuquén 8,Administración,Curso Avanzado,Ingeniero,Felipe Torres,+54 9 2839 35629-3751,agustin.ponce@defensa.ar
+1106,Julieta Sánchez,37201980,1991-12-04,Ejército,Teniente,Centro,Ciudad Autónoma de Buenos Aires,Batallón CABA 2,Administración,Curso Avanzado,Piloto,Diego Suárez,+54 9 2756 86334-9634,julieta.sanchez@defensa.ar
+1107,Martina Díaz,24851555,1964-06-11,Armada,Cabo,NOA,Catamarca,Base Naval San Fernando del Valle 1,Geografía,Civil,Caballería,Malena Díaz,+54 9 2368 48353-1143,martina.diaz@defensa.ar
+1108,Julieta Muñoz,53533414,1965-02-10,Ejército,Coronel,NEA,Chaco,Sección Resistencia 2,Contabilidad,Militar,Caballería,Santiago Quiroga,+54 9 935 29964-9709,julieta.munoz@defensa.ar
+1109,Camila Domínguez,48453358,1979-04-20,Fuerza Aérea,Cabo,Centro,Córdoba,Escuadrón Córdoba 6,Psicología,Civil,Ingeniero,Magdalena Cáceres,+54 9 2771 42016-2337,camila.dominguez@defensa.ar
+1110,Juan Vega,41218825,1975-01-22,Fuerza Aérea,Teniente,Patagonia,Neuquén,Escuadrón Neuquén 2,Psicología,Curso Básico,Médico,Ailén Orozco,+54 9 771 22271-3237,juan.vega@defensa.ar
+1111,Nahuel Correa,51246863,1985-03-24,Fuerza Aérea,Aviador,Centro,Córdoba,Comando Córdoba 7,Historia,Civil,Infantería,Malena Gutiérrez,+54 9 2807 36623-9110,nahuel.correa@defensa.ar
+1112,José Ramírez,42759246,2002-01-30,Armada,Capitán de Fragata,Patagonia,Chubut,Apostadero Rawson 1,Historia,Civil,Piloto,Pablo Díaz,+54 9 1752 23821-5010,jose.ramirez@defensa.ar
+1113,Paula Martínez,59313487,1980-12-04,Fuerza Aérea,Capitán,Patagonia,Neuquén,Escuadrón Neuquén 7,Derecho,Civil,Caballería,María Vega,+54 9 1042 25965-8347,paula.martinez@defensa.ar
+1114,Paula Correa,50824529,1969-12-26,Armada,Marinero,Cuyo,San Luis,Comando San Luis 6,Contabilidad,Curso Intermedio,Piloto,Felipe Rodríguez,+54 9 2079 99988-5603,paula.correa@defensa.ar
+1115,Ana López,52271954,1997-01-15,Fuerza Aérea,Alférez,Patagonia,Neuquén,Comando Neuquén 6,Psicología,Militar,Piloto,Nicolás Molina,+54 9 752 54466-2035,ana.lopez@defensa.ar
+1116,Martina Torres,28490680,1999-09-13,Ejército,Teniente,Centro,Buenos Aires,Brigada La Plata 6,Medicina,Civil,Médico,Martina Romero,+54 9 2261 34974-8719,martina.torres@defensa.ar
+1117,Renata Torres,46462483,1995-01-05,Ejército,Subteniente,Centro,La Pampa,Sección Santa Rosa 3,Contabilidad,Curso Básico,Artillería,Agustín Correa,+54 9 2462 80688-5144,renata.torres@defensa.ar
+1118,Felipe Rojas,56257728,1997-09-02,Fuerza Aérea,Alférez,NOA,Salta,Comando Salta 8,Informática,Civil,Ingeniero,Lucía Gómez,+54 9 365 95050-1730,felipe.rojas@defensa.ar
+1119,Martina Suárez,33748551,1975-10-24,Fuerza Aérea,Comodoro,NOA,Jujuy,Base Aérea San Salvador 4,Administración,Curso Intermedio,Logística,Sofía Silva,+54 9 1290 24137-7917,martina.suarez@defensa.ar
+1120,Camila Gutiérrez,53768644,1971-03-09,Ejército,Sargento,Centro,Santa Fe,Brigada Santa Fe 1,Psicología,Curso Intermedio,Infantería,Lucía Rodríguez,+54 9 2435 25864-9169,camila.gutierrez@defensa.ar
+1121,Rocío Luna,35994810,2003-08-23,Ejército,Cabo,Patagonia,Santa Cruz,Batallón Río Gallegos 2,Administración,Civil,Caballería,Sofía Vázquez,+54 9 2497 70597-9463,rocio.luna@defensa.ar
+1122,Malena Luna,44988035,2005-10-27,Fuerza Aérea,Alférez,Patagonia,Neuquén,Base Aérea Neuquén 1,Geografía,Militar,Comunicaciones,Juan Suárez,+54 9 1754 58862-4738,malena.luna@defensa.ar
+1123,Lautaro Álvarez,46381566,1985-06-08,Fuerza Aérea,Mayor,Cuyo,San Luis,Escuadrón San Luis 4,Historia,Curso Intermedio,Caballería,Pablo Ponce,+54 9 1251 51412-9318,lautaro.alvarez@defensa.ar
+1124,Renata Castro,52156721,1997-08-03,Fuerza Aérea,Teniente,Patagonia,Río Negro,Comando Viedma 9,Relaciones Internacionales,Curso Avanzado,Infantería,Pablo Cáceres,+54 9 459 53473-9173,renata.castro@defensa.ar
+1125,Juan Orozco,54144938,2003-06-29,Ejército,Subteniente,NEA,Formosa,Batallón Formosa 4,Ingeniería,Curso Intermedio,Médico,Gael Navarro,+54 9 1763 70668-8850,juan.orozco@defensa.ar
+1126,Diego Orozco,52917646,1974-12-29,Ejército,Mayor,NOA,Jujuy,Comando San Salvador 5,Medicina,Civil,Logística,Julieta Rojas,+54 9 2553 92678-8245,diego.orozco@defensa.ar
+1127,Gonzalo Vega,27518777,1960-03-09,Armada,Sargento,Centro,Córdoba,Brigada Córdoba 1,Medicina,Civil,Artillería,Camila Navarro,+54 9 541 84922-5988,gonzalo.vega@defensa.ar
+1128,Rocío Quiroga,47090147,1994-07-18,Fuerza Aérea,Capitán,Centro,Santa Fe,Escuadrón Santa Fe 8,Medicina,Curso Básico,Inteligencia,Agustín Ponce,+54 9 1486 91268-6278,rocio.quiroga@defensa.ar
+1129,Gael Vega,58645803,2004-07-30,Ejército,Subteniente,Cuyo,San Juan,Brigada San Juan 8,Psicología,Curso Intermedio,Sanidad,Julieta Romero,+54 9 2774 45464-8946,gael.vega@defensa.ar
+1130,Gael Bravo,52928810,1983-03-16,Fuerza Aérea,Mayor,NEA,Chaco,Escuadrón Resistencia 4,Relaciones Internacionales,Curso Avanzado,Logística,Carolina Herrera,+54 9 1123 68763-1266,gael.bravo@defensa.ar
+1131,Emilia Suárez,29271743,1968-12-06,Armada,Cabo,Cuyo,San Juan,Apostadero San Juan 2,Relaciones Internacionales,Civil,Ingeniero,Gael Cáceres,+54 9 2089 70727-9023,emilia.suarez@defensa.ar
+1132,Julieta Bravo,26787645,1985-06-24,Ejército,Cabo,NOA,Catamarca,Sección San Fernando del Valle 3,Administración,Militar,Inteligencia,Magdalena Rodríguez,+54 9 876 35326-6507,julieta.bravo@defensa.ar
+1133,Magdalena Silva,52994046,1979-03-26,Fuerza Aérea,Teniente,Centro,Córdoba,Base Aérea Córdoba 4,Psicología,Curso Avanzado,Infantería,Nahuel Peralta,+54 9 2222 71993-5738,magdalena.silva@defensa.ar
+1134,Nahuel Bravo,27248040,1967-06-11,Fuerza Aérea,Alférez,NEA,Corrientes,Escuadrón Corrientes 2,Psicología,Curso Intermedio,Sanidad,Gael Quiroga,+54 9 217 91575-9144,nahuel.bravo@defensa.ar
+1135,Camila Sánchez,29032922,1982-11-30,Armada,Teniente de Navío,Patagonia,Río Negro,Brigada Viedma 5,Relaciones Internacionales,Curso Avanzado,Piloto,Nicolás Ponce,+54 9 2217 29510-5714,camila.sanchez@defensa.ar
+1136,Gael Álvarez,26332580,1983-04-17,Fuerza Aérea,Comodoro,Patagonia,Río Negro,Comando Viedma 9,Geografía,Curso Intermedio,Comunicaciones,Tomás Peralta,+54 9 722 31403-2576,gael.alvarez@defensa.ar
+1137,Julieta Castro,45785035,1969-04-21,Ejército,Cabo,NEA,Misiones,Comando Posadas 7,Contabilidad,Civil,Médico,Emilia Figueroa,+54 9 1277 27044-8331,julieta.castro@defensa.ar
+1138,Valentina Ramírez,53982961,1992-03-28,Ejército,Mayor,NEA,Formosa,Comando Formosa 8,Geografía,Curso Avanzado,Ingeniero,Nicolás Molina,+54 9 1263 29491-6448,valentina.ramirez@defensa.ar
+1139,Benjamín Benítez,39830242,1992-09-19,Armada,Capitán de Fragata,Centro,Córdoba,Apostadero Córdoba 1,Informática,Curso Intermedio,Piloto,Valentina Molina,+54 9 2744 66171-5141,benjamin.benitez@defensa.ar
+1140,Lucía Benítez,52941871,1997-02-25,Ejército,Mayor,Cuyo,Mendoza,Batallón Mendoza 1,Administración,Civil,Caballería,Diego Gómez,+54 9 2809 37472-5683,lucia.benitez@defensa.ar
+1141,Agustín Romero,59255701,1970-04-21,Armada,Teniente de Navío,Patagonia,Tierra del Fuego,Apostadero Ushuaia 4,Medicina,Militar,Piloto,Facundo Rodríguez,+54 9 457 77419-5818,agustin.romero@defensa.ar
+1142,Magdalena Correa,26450053,1983-10-30,Armada,Cabo,Centro,La Pampa,Apostadero Santa Rosa 1,Medicina,Militar,Médico,Abril Rojas,+54 9 1392 87268-8622,magdalena.correa@defensa.ar
+1143,Sofía Vega,37382466,1993-03-07,Ejército,Soldado,Patagonia,Tierra del Fuego,Batallón Ushuaia 7,Administración,Curso Básico,Comunicaciones,Renata Correa,+54 9 792 45441-4397,sofia.vega@defensa.ar
+1144,Juan Luna,35483754,1986-05-09,Ejército,Sargento,NEA,Formosa,Brigada Formosa 2,Administración,Militar,Inteligencia,Camila López,+54 9 2478 89031-6108,juan.luna@defensa.ar
+1145,Isabella Pérez,42728441,1979-12-29,Ejército,Subteniente,Patagonia,Río Negro,Brigada Viedma 5,Derecho,Curso Básico,Comunicaciones,Sofía Cáceres,+54 9 1597 61800-9269,isabella.perez@defensa.ar
+1146,Juan López,52700412,1987-06-04,Fuerza Aérea,Mayor,NOA,Santiago del Estero,Comando Santiago 4,Ingeniería,Curso Básico,Sanidad,Abril Ortega,+54 9 253 59095-1947,juan.lopez@defensa.ar
+1147,Magdalena Bravo,32707064,1968-07-22,Armada,Cabo,Cuyo,Mendoza,Comando Mendoza 2,Derecho,Militar,Inteligencia,Isabella Gutiérrez,+54 9 1594 39236-1015,magdalena.bravo@defensa.ar
+1148,José Flores,53741426,1981-04-11,Armada,Capitán de Corbeta,NEA,Chaco,Apostadero Resistencia 4,Administración,Militar,Médico,Sofía Molina,+54 9 1553 70871-9760,jose.flores@defensa.ar
+1149,Nicolás Domínguez,52926038,1990-02-22,Ejército,Sargento,Centro,Buenos Aires,Sección La Plata 8,Informática,Curso Intermedio,Infantería,Julieta Suárez,+54 9 942 97260-1951,nicolas.dominguez@defensa.ar
+1150,Sofía Ramírez,43469747,2002-05-10,Armada,Teniente de Navío,NOA,La Rioja,Apostadero La Rioja 8,Administración,Curso Básico,Caballería,Nahuel Gómez,+54 9 1812 65580-2052,sofia.ramirez@defensa.ar
+1151,Ailén Suárez,37201243,1962-07-30,Fuerza Aérea,Mayor,NEA,Misiones,Escuadrón Posadas 8,Informática,Curso Avanzado,Piloto,Iván Castro,+54 9 2645 20386-5129,ailen.suarez@defensa.ar
+1152,Ailén Orozco,27071609,1993-01-28,Armada,Guardiamarina,Centro,Ciudad Autónoma de Buenos Aires,Apostadero CABA 7,Psicología,Curso Intermedio,Infantería,Felipe Torres,+54 9 1000 62772-5116,ailen.orozco@defensa.ar
+1153,Gael Ortega,55854979,1990-02-20,Armada,Sargento,Centro,La Pampa,Comando Santa Rosa 5,Administración,Curso Intermedio,Inteligencia,Joaquín Castro,+54 9 030 58914-8114,gael.ortega@defensa.ar
+1154,Martina Fernández,28933243,2003-01-02,Ejército,Cabo,Patagonia,Río Negro,Batallón Viedma 8,Relaciones Internacionales,Curso Avanzado,Ingeniero,Agustín Gutiérrez,+54 9 619 55135-6268,martina.fernandez@defensa.ar
+1155,Ana Peralta,35124703,1968-02-14,Armada,Marinero,NEA,Formosa,Brigada Formosa 6,Contabilidad,Curso Intermedio,Ingeniero,Sofía Cáceres,+54 9 1451 21298-6797,ana.peralta@defensa.ar
+1156,Martina Domínguez,25669479,1960-08-20,Ejército,Subteniente,Cuyo,San Juan,Brigada San Juan 6,Geografía,Militar,Piloto,Valentina Vázquez,+54 9 634 81319-5108,martina.dominguez@defensa.ar
+1157,Gonzalo González,47415057,1986-08-21,Ejército,Teniente,NOA,Catamarca,Sección San Fernando del Valle 8,Contabilidad,Curso Básico,Artillería,Felipe Benítez,+54 9 221 26519-4749,gonzalo.gonzalez@defensa.ar
+1158,Joaquín Herrera,37738461,1991-07-21,Fuerza Aérea,Aviador,Patagonia,Chubut,Escuadrón Rawson 4,Informática,Curso Avanzado,Piloto,Benjamín Gutiérrez,+54 9 116 89472-9091,joaquin.herrera@defensa.ar
+1159,Paula Peralta,50295037,1977-12-19,Ejército,Capitán,NOA,La Rioja,Brigada La Rioja 8,Contabilidad,Curso Básico,Piloto,Renata Molina,+54 9 2060 27140-2101,paula.peralta@defensa.ar
+1160,Nicolás Vega,53399664,1985-02-09,Fuerza Aérea,Alférez,Centro,Ciudad Autónoma de Buenos Aires,Base Aérea CABA 5,Psicología,Militar,Piloto,Rocío Gutiérrez,+54 9 713 61408-2755,nicolas.vega@defensa.ar
+1161,Tomás Bravo,54143423,1995-06-23,Ejército,Coronel,NOA,Catamarca,Batallón San Fernando del Valle 9,Informática,Curso Intermedio,Infantería,Malena Martínez,+54 9 931 49689-2444,tomas.bravo@defensa.ar
+1162,Agustín Cáceres,28076312,1970-03-04,Armada,Guardiamarina,Centro,Córdoba,Brigada Córdoba 1,Derecho,Curso Básico,Artillería,Joaquín Díaz,+54 9 2410 54407-7128,agustin.caceres@defensa.ar
+1163,Nahuel Gómez,35268295,1985-09-21,Armada,Sargento,NEA,Corrientes,Comando Corrientes 5,Contabilidad,Curso Avanzado,Ingeniero,Agustín Suárez,+54 9 044 34965-8839,nahuel.gomez@defensa.ar
+1164,Gonzalo López,39772281,1978-06-24,Ejército,Soldado,NOA,Salta,Comando Salta 8,Informática,Civil,Médico,Malena Figueroa,+54 9 1617 94489-6231,gonzalo.lopez@defensa.ar
+1165,Facundo Ibarra,22752095,1967-12-24,Armada,Capitán de Fragata,NOA,La Rioja,Apostadero La Rioja 8,Medicina,Curso Intermedio,Médico,Diego Ortega,+54 9 1089 81968-3748,facundo.ibarra@defensa.ar
+1166,Agustín Martínez,46096069,1980-07-05,Armada,Guardiamarina,Cuyo,San Luis,Base Naval San Luis 4,Ingeniería,Curso Avanzado,Infantería,Valentina Ibarra,+54 9 1293 81783-1785,agustin.martinez@defensa.ar
+1167,Ana Sánchez,31968454,1964-09-21,Ejército,Cabo,Patagonia,Neuquén,Sección Neuquén 7,Ingeniería,Curso Intermedio,Piloto,Renata Rojas,+54 9 872 30213-4415,ana.sanchez@defensa.ar
+1168,Mateo Ponce,55910168,2005-10-16,Armada,Capitán de Fragata,NOA,Jujuy,Brigada San Salvador 5,Medicina,Civil,Sanidad,Camila Castro,+54 9 1523 42592-3971,mateo.ponce@defensa.ar
+1169,Ailén Cáceres,27947837,2002-08-24,Fuerza Aérea,Cabo,Cuyo,San Juan,Escuadrón San Juan 8,Contabilidad,Curso Intermedio,Logística,Santiago Luna,+54 9 444 41904-6076,ailen.caceres@defensa.ar
+1170,Isabella Molina,35850897,1968-01-16,Armada,Capitán de Navío,NOA,La Rioja,Base Naval La Rioja 5,Administración,Curso Intermedio,Caballería,Valentina Álvarez,+54 9 2399 77031-6318,isabella.molina@defensa.ar
+1171,Felipe Luna,21517876,1989-03-02,Ejército,Teniente,Centro,Ciudad Autónoma de Buenos Aires,Batallón CABA 9,Contabilidad,Civil,Caballería,Julieta Suárez,+54 9 918 85267-2936,felipe.luna@defensa.ar
+1172,Iván Sosa,29678829,1986-09-19,Fuerza Aérea,Cabo,Centro,La Pampa,Escuadrón Santa Rosa 3,Derecho,Civil,Sanidad,José Torres,+54 9 2791 40585-9967,ivan.sosa@defensa.ar
+1173,Martina Cáceres,21357482,1968-10-28,Fuerza Aérea,Comodoro,Centro,Entre Ríos,Escuadrón Paraná 9,Derecho,Curso Intermedio,Ingeniero,Agustín Rodríguez,+54 9 443 52466-3163,martina.caceres@defensa.ar
+1174,Ailén Gómez,43009235,1972-07-03,Fuerza Aérea,Aviador,Cuyo,Mendoza,Escuadrón Mendoza 8,Psicología,Curso Avanzado,Médico,Sofía Peralta,+54 9 456 44511-6285,ailen.gomez@defensa.ar
+1175,Mercedes Silva,23296091,1989-01-16,Ejército,Coronel,NEA,Formosa,Brigada Formosa 6,Administración,Civil,Logística,Sofía Gómez,+54 9 170 52653-8902,mercedes.silva@defensa.ar
+1176,Ezequiel Sánchez,30365337,1998-07-20,Ejército,Subteniente,NEA,Corrientes,Sección Corrientes 7,Ingeniería,Militar,Artillería,Carolina Díaz,+54 9 109 57517-2727,ezequiel.sanchez@defensa.ar
+1177,Mercedes Peralta,41538516,2000-06-16,Fuerza Aérea,Cabo,Patagonia,Santa Cruz,Comando Río Gallegos 1,Administración,Curso Intermedio,Logística,Malena Peralta,+54 9 076 36946-3269,mercedes.peralta@defensa.ar
+1178,Joaquín Orozco,53620724,1994-11-09,Ejército,Mayor,Cuyo,Mendoza,Sección Mendoza 1,Medicina,Civil,Médico,Valentina Orozco,+54 9 058 28763-3266,joaquin.orozco@defensa.ar
+1179,Lucía González,28229193,1982-08-12,Armada,Capitán de Fragata,Patagonia,Tierra del Fuego,Comando Ushuaia 3,Geografía,Curso Intermedio,Médico,Carolina Figueroa,+54 9 586 80990-8501,lucia.gonzalez@defensa.ar
+1180,Carolina Gómez,42398207,1994-08-02,Armada,Capitán de Fragata,NOA,Tucumán,Brigada San Miguel de Tucumán 1,Relaciones Internacionales,Militar,Piloto,Juan Orozco,+54 9 2948 31536-9390,carolina.gomez@defensa.ar
+1181,Sofía Sosa,56146406,2005-12-04,Ejército,Cabo,Cuyo,Mendoza,Brigada Mendoza 9,Psicología,Curso Intermedio,Inteligencia,Felipe Ibarra,+54 9 2380 27931-8527,sofia.sosa@defensa.ar
+1182,Gonzalo Herrera,34364708,1983-11-05,Ejército,Teniente,Patagonia,Santa Cruz,Sección Río Gallegos 1,Informática,Curso Avanzado,Médico,Sofía González,+54 9 786 40163-3386,gonzalo.herrera@defensa.ar
+1183,Mateo López,55474750,1963-01-29,Fuerza Aérea,Teniente,NOA,Jujuy,Comando San Salvador 6,Informática,Militar,Caballería,Martina Suárez,+54 9 1251 64985-8090,mateo.lopez@defensa.ar
+1184,Camila Bravo,54337991,1986-03-13,Armada,Cabo,NEA,Chaco,Brigada Resistencia 5,Medicina,Militar,Sanidad,Iván Martínez,+54 9 2794 57004-3938,camila.bravo@defensa.ar
+1185,Malena Torres,37736631,1991-08-15,Armada,Guardiamarina,NOA,Salta,Apostadero Salta 5,Psicología,Militar,Inteligencia,Camila Navarro,+54 9 1695 94008-7757,malena.torres@defensa.ar
+1186,Abril Flores,53921637,2002-07-08,Ejército,Mayor,Patagonia,Neuquén,Comando Neuquén 1,Geografía,Militar,Artillería,Pablo Flores,+54 9 396 65737-7199,abril.flores@defensa.ar
+1187,Gael Orozco,31607402,1981-08-07,Ejército,Soldado,Patagonia,Tierra del Fuego,Brigada Ushuaia 7,Psicología,Curso Avanzado,Piloto,Diego Álvarez,+54 9 668 39440-4886,gael.orozco@defensa.ar
+1188,Iván Díaz,55168443,1977-06-13,Fuerza Aérea,Alférez,NOA,Catamarca,Comando San Fernando del Valle 7,Derecho,Civil,Inteligencia,Gonzalo González,+54 9 631 82878-2762,ivan.diaz@defensa.ar
+1189,Ana Muñoz,36563146,1970-12-05,Armada,Capitán de Navío,Patagonia,Chubut,Apostadero Rawson 8,Contabilidad,Curso Básico,Piloto,Camila Ponce,+54 9 390 48845-2989,ana.munoz@defensa.ar
+1190,Nicolás Figueroa,59923590,1985-10-10,Fuerza Aérea,Aviador,Patagonia,Santa Cruz,Escuadrón Río Gallegos 5,Contabilidad,Curso Avanzado,Logística,Mercedes Álvarez,+54 9 2178 93905-4383,nicolas.figueroa@defensa.ar
+1191,Malena Ponce,49455549,1962-05-20,Ejército,Coronel,Patagonia,Chubut,Brigada Rawson 9,Derecho,Curso Intermedio,Artillería,Malena González,+54 9 2202 54842-3429,malena.ponce@defensa.ar
+1192,Agustín González,28481631,1984-06-17,Fuerza Aérea,Mayor,Patagonia,Neuquén,Comando Neuquén 4,Historia,Militar,Sanidad,Magdalena Romero,+54 9 1896 49112-1354,agustin.gonzalez@defensa.ar
+1193,Camila Vázquez,31135680,2000-02-18,Armada,Marinero,NOA,Tucumán,Comando San Miguel de Tucumán 2,Ingeniería,Curso Básico,Médico,Isabella Orozco,+54 9 2092 25496-2124,camila.vazquez@defensa.ar
+1194,Joaquín Martínez,58117096,1982-10-20,Armada,Marinero,NOA,La Rioja,Base Naval La Rioja 8,Contabilidad,Civil,Médico,Facundo López,+54 9 913 66479-3514,joaquin.martinez@defensa.ar
+1195,Mateo Herrera,52550705,1972-11-10,Fuerza Aérea,Alférez,Centro,Buenos Aires,Base Aérea La Plata 8,Contabilidad,Curso Avanzado,Inteligencia,Tomás Muñoz,+54 9 1006 83047-8929,mateo.herrera@defensa.ar
+1196,Julieta Figueroa,51776754,2003-08-21,Ejército,Sargento,NOA,Jujuy,Batallón San Salvador 9,Relaciones Internacionales,Curso Intermedio,Inteligencia,Carolina Muñoz,+54 9 417 55813-8473,julieta.figueroa@defensa.ar
+1197,Iván Ponce,34565313,1991-08-11,Armada,Capitán de Corbeta,Cuyo,San Luis,Brigada San Luis 9,Medicina,Militar,Inteligencia,Lucía Gómez,+54 9 2415 38800-9915,ivan.ponce@defensa.ar
+1198,Gael Ramírez,42069840,1977-02-13,Fuerza Aérea,Aviador,NOA,Santiago del Estero,Base Aérea Santiago 5,Medicina,Curso Básico,Artillería,Iván Navarro,+54 9 2072 91900-6074,gael.ramirez@defensa.ar
+1199,Nahuel Orozco,27904753,2000-09-02,Fuerza Aérea,Teniente,NEA,Corrientes,Base Aérea Corrientes 7,Informática,Curso Básico,Piloto,Nicolás Figueroa,+54 9 253 56366-1332,nahuel.orozco@defensa.ar
+1200,Magdalena Álvarez,59606445,2002-03-02,Fuerza Aérea,Alférez,Cuyo,San Luis,Escuadrón San Luis 4,Psicología,Militar,Inteligencia,Ramiro Sánchez,+54 9 641 85330-1735,magdalena.alvarez@defensa.ar
